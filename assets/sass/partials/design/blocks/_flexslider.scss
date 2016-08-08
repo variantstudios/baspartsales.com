@@ -1,0 +1,24 @@
+.flexslider {
+    margin: 0 0 2em;
+    border: 0;
+    background: #fff;
+}
+.flex-direction-nav a {
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+.flexslider .flex-next,
+.flexslider .flex-prev {
+    opacity: 1;
+}
+.flexslider .flex-prev {
+    left: 10px;
+}
+.flexslider .flex-next {
+    right: 10px;
+}
+.flexslider .flex-next,
+.flexslider .flex-prev {
+    height: 50px;
+}

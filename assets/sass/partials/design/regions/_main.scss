@@ -1,4 +1,4 @@
-.wrap {
+/*.wrap {
   @include clearfix;
   max-width: $container_width;
   margin: 0 auto;
@@ -10,4 +10,13 @@ main {
   @include clearfix;
   padding: 2em 0;
 
+}*/
+.main-wrapper {
+    float: left;
+    width: 80%;
+    height: 100%;
+    @include breakpoint($bp-medium, $no-query: ".no-mq") {
+      /*@include grid-span(8,4);
+      @include add-gutter(0);*/
+    }
 }

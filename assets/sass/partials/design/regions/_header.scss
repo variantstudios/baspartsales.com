@@ -1,10 +1,4 @@
-.logo {
-  text-align: center;
-  width: 350px;
-  @include breakpoint($bp-medium, $no-query: ".no-mq") {
-    @include grid-span(4,1,$gutter:0);
-  }
-}
+/*
 .main-nav {
   @include breakpoint($bp-medium, $no-query: ".no-mq") {
     @include grid-span(8,5);
@@ -14,4 +8,21 @@
 .header-wrapper  {
   padding: 1em 0;
   background: $header-bg;
+}*/
+.header-wrapper {
+    background: #000;
+    width: 20%;
+    height: 100%;
+    float: left;
+    @include breakpoint($bp-medium, $no-query: ".no-mq") {
+      //@include grid-span(3,1);
+      //@include add-gutter(0);
+    }
+}
+.logo {
+  text-align: center;
+  margin: 1em auto;
+  @include breakpoint($bp-medium, $no-query: ".no-mq") {
+    width: 100%;
+  }
 }
