@@ -5,20 +5,12 @@ description: This is just a sample general page.
 layout: page
 ---
 
-*Lorem* markdownum iacet figurae, *fert* heros, stetit generis! Vel *vagus sua*
-alvum ab rexit: inclinatoque callo ad condita valido.
+BAS Part Sales, LLC is a sister company to the very high regarded Beegles Aircraft Service, INC, all located in Greeley, CO.  BAS has been a separate entity and established since 2012 and going strong today.  With our small staff of 6 employees you are sure you will get the proper attention you need in a timely manner.    
 
-## Traxit fera fratris Horae ibis hic etiam
+We are the world’s largest internet based platforms for selling general aviation airframe, both new and used, engine and avionic suppliers.  Today we currently utilize, eBay, Partsbase, Controller, Facebook, Google, shopify, etc.  You can always drop the mouse and pick up the phone and talk to our friendly, knowledgeable sales staff Monday thru Friday 7:30- 4:00.
 
-Triticeas premente altum eget rediere *limite*. Non orientis hunc, surgunt
-vocem: [ac](http://www.googel.com) cadit quod, Boebes superat! Ut
-Phoebe obfuit effugit hic arte: scripsi quaterque plenissima at volucris
-visaque. Vanis Cinyreius tamen: deficit sub ignem, lumina.
+625 Airport Road
+Greeley, CO 80631
 
-## Flamine sceleratus Amoris anxia Cymeli calorque mortale
-
-Est undas; [si quoque](http://google.com) et ignorat vidit. Pro
-incursu modis missi lunae ad dicta: neganda Delius est. Utque et cadendum erat;
-qui **causas Thisbe terra** sacra esse quae sanguine, decursa sed structa ab
-beatam ut! Moderato fluminis coniungere ambae et certa carinae Macareus, sic et
-ista neque mox ventis regnare coepit.
+Telephone:
+(970) 313-4823

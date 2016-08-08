@@ -1,6 +1,38 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/assets/js/prod/jquery-1-11-1.min.js"><\/script>')</script>
 <script src="/assets/js/prod/scripts.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.3/jquery.backstretch.min.js"></script>
+<script src="/assets/js/prod/jquery.flexslider-min.js"></script>
+
+{% if page.url != "/index.html" %}
+{% else %}
+{% endif %}
+
+
+
+<script>
+    $(document).ready(function() {
+        //$("#demo").backstretch(["/assets/images/home/01.jpg"], {fade: "normal"});
+        $("#demo").backstretch([
+             "http://dl.dropbox.com/u/515046/www/outside.jpg"
+           , "http://dl.dropbox.com/u/515046/www/garfield-interior.jpg"
+           , "http://dl.dropbox.com/u/515046/www/cheers.jpg"
+         ], {duration: 3000, fade: 750});
+    });
+
+  $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide",
+        //animationLoop: false,
+        controlNav: false,
+        itemWidth: 210,
+        itemMargin: 0
+      });
+
+  });
+</script>
+
+
 
 {% if site.google_analytics_tracking_id %}
   <!-- google analytics -->

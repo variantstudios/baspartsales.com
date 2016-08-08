@@ -1,8 +1,8 @@
 
 # Site settings
-title: "Jekyll Base"
+title: "B.A.S. Part Sales"
 email: "team@variantstudios.com"
-description: "Our base repo for jekyll-based sites"
+description: "We are the world’s largest internet based platforms for selling general aviation airframe, both new and used, engine and avionic suppliers."
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://orchid-lyrebird.cloudvent.net" # the base hostname & protocol for your site
 #timezone: America/Denver - Don't set for CloudCannon...for reasons.

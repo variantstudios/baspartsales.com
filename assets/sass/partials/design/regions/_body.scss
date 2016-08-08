@@ -1,12 +1,9 @@
-html {
+html, body {
 	box-sizing: border-box;
-  height: 100%;
-	body {
+    height: 100%;
     margin: 0;
-	  height: 100%;
     background: $site-bg;
     overflow-x: hidden;
-	}
 }
 *, *:before, *:after { box-sizing: inherit; }
 
@@ -18,6 +15,7 @@ html {
 
 .site-wrapper {
   margin: 0 auto;
+  height: 100%;
   //max-width: $container_width;
 }
 
