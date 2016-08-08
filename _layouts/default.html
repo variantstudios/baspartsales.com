@@ -7,14 +7,14 @@
 <body>
 	{% include browserupgrade.html %}
 
-  <div class="header-wrapper clearfix">
-	  {% include header.html %}
-  </div>
+<div class="site-wrapper clearfix">
+	 {% include header.html %}
+	 <div class="main-wrapper clearfix">
+		 {{ content }}
+	 </div>
+</div>
 
-  <div class="main-wrapper clearfix">
-	  {{ content }}
-  </div>
-  
+
   <div class="footer-wrapper clearfix">
   	{% include footer.html %}
   </div>
