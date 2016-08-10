@@ -18,36 +18,20 @@ gems:
 # Permalinks
 permalink: pretty
 
-# Pagination
-paginate: 10
-paginate_path: '/blog/:num/'
-
 #Collections
 collections:
-  posts:
+  products:
     output: true
-    permalink: '/blog/:title/'
-  people:
-    output: false
-  categories:
-    output: true
-    permalink: '/blog/:title/'
-  tags:
-    output: true
-    permalink: '/blog/:title/'
+    permalink: '/products/:title/'
 
 defaults:
   -
     scope:
-      type: posts
+      type: products
     values:
-      layout: post
+      layout: default
       title:
-      image_path:
       description:
-      author:
-      category:
-      tags:
 
 # typekit - Because we all need nice type faces.
 typekit:
