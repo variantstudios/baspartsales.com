@@ -29,7 +29,7 @@ defaults:
     scope:
       type: products
     values:
-      layout: default
+      layout: page
       title:
       description:
 
