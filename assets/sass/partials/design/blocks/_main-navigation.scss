@@ -110,10 +110,11 @@ label > span {
 
 
 .menu {
-  padding: 0;
+  padding: 0 0 6em;
   margin: 0;
   @include breakpoint($bp-medium, $no-query: '.no-mq') {
     //text-align: right;
+    padding: 0;
   }
   li {
     list-style: none;
@@ -130,8 +131,9 @@ label > span {
       transition: color .5s ease;
       padding: .75em 1em;
       display: block;
-      color: #fff;
+      color: #4A4A4A;
       text-transform: uppercase;
+      letter-spacing: 1px;
       @include breakpoint($bp-medium, $no-query: '.no-mq') {
         margin-left: 1.5em;
         padding: 0;

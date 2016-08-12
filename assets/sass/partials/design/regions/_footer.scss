@@ -2,12 +2,16 @@
   background: #000;
   color: #FFF;
   padding: 0;
+  @include clearfix;
 }
 .left {
     width: 45%;
     float: left;
     text-align: left;
     padding-left: 3%;
+    @include breakpoint($bp-large, $no-query: '.no-mq') {
+    margin-left: 300px;
+  }
 }
 .right {
     width: 45%;

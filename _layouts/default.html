@@ -13,12 +13,13 @@
             {% include header.html %}
             <div class="main-wrapper clearfix" id="demo">
                 {{ content }}
+                <div class="footer-wrapper clearfix">
+                    {% include footer.html %}
+                </div>
             </div>
         </div>
 
-        <div class="footer-wrapper clearfix">
-            {% include footer.html %}
-        </div>
+        
 
         {% include scripts.html %}
     </body>
