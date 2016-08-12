@@ -1,5 +1,5 @@
 .header-img {
-  margin: -1em -1em 4em;      
+  margin: -2em -1em 4em;      
   @include breakpoint($bp-medium, $no-query: '.no-mq') {
     margin: -2em -2em 4em;
   }

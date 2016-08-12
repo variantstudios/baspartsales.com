@@ -6,11 +6,17 @@ main {
   }
 }
 .main-wrapper { 
+  position: relative;
+  opacity:1;
+  transition: all .4s ease-in;
+  left: 0;
   @include breakpoint($bp-large, $no-query: '.no-mq') {
     margin-left: 300px;
   }
 }
 
 .show .main-wrapper {
-  margin-left: 200px;
+  left: 200px;
+  opacity: .5;
+  transition: all .4s ease-in;
 }

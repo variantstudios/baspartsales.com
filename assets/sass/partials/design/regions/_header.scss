@@ -16,12 +16,17 @@
   height: 100%;
   position: fixed;
   overflow-x: scroll;
+  z-index: 9;
+  transition: all .3s ease-in;
+  box-shadow: 2px 0px 2px rgba(0,0,0,0.15);
   @include breakpoint($bp-large, $no-query: ".no-mq") {
     margin-left: 0;
+    box-shadow: 0;
   }
 }
 .show .header-wrapper{
   margin-left: 0;
+  transition: all .4s ease-in;
 }
 .logo {
   text-align: center;
@@ -41,7 +46,22 @@
 }
 
 .mobile-header {
+  @include clearfix;
+  background: #000;
   @include breakpoint($bp-large, $no-query: ".no-mq") {
     display: none;
+  }
+  .open-menu {
+    display: inline-block;
+    padding: 1em 1em;
+    font-weight: 700;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #fff;
+  }
+  .small-logo {
+    display: inline-block;
+    float: right;
+    padding: 1em 1em 0.5em;
   }
 }
