@@ -1,0 +1,27 @@
+#auction-nudge-items {
+  div.an-item {
+    padding: 3% 2% !important;
+    .an-title{
+      font-size: 1.3em;
+      line-height: 1.4;
+      a {
+        color: inherit;
+      }
+    }
+    div.an-image {
+      margin: 0px 20px 0 0 !important;
+    }
+    div.an-price {
+      font-size: 1.2em;
+    }
+    .an-view a{
+      font-weight: 700;
+      background: #0f7abd;
+      color: #fff;
+      display: inline-block;
+      padding: .25em 1em;
+      border-radius: 3px;
+      margin-top: 10px;
+    }
+  }
+}

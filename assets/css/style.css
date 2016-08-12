@@ -32,22 +32,22 @@ p + p {
 
 /* line 1, ../sass/partials/styleguide/type/_headings.scss */
 h1 {
-  font-size: 2em;
+  font-size: 2.4em;
 }
 
 /* line 2, ../sass/partials/styleguide/type/_headings.scss */
 h2 {
-  font-size: 1.8em;
+  font-size: 2em;
 }
 
 /* line 3, ../sass/partials/styleguide/type/_headings.scss */
 h3 {
-  font-size: 1.4em;
+  font-size: 1.7em;
 }
 
 /* line 4, ../sass/partials/styleguide/type/_headings.scss */
 h4 {
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 /* line 5, ../sass/partials/styleguide/type/_headings.scss */
@@ -922,6 +922,7 @@ label > span {
 /* line 1, ../sass/partials/design/blocks/_header-images.scss */
 .header-img {
   margin: -2em -1em 4em;
+  position: relative;
 }
 @media (min-width: 50em) {
   /* line 1, ../sass/partials/design/blocks/_header-images.scss */
@@ -933,9 +934,31 @@ label > span {
 .no-mq .header-img {
   margin: -2em -2em 4em;
 }
-/* line 6, ../sass/partials/design/blocks/_header-images.scss */
+/* line 7, ../sass/partials/design/blocks/_header-images.scss */
 .header-img img {
   width: 100%;
+}
+/* line 10, ../sass/partials/design/blocks/_header-images.scss */
+.header-img .header-img-title {
+  background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.54) 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.54) 0%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  bottom: -7px;
+  padding: 0.75em 1em;
+  width: 100%;
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #fff;
+}
+@media (min-width: 50em) {
+  /* line 10, ../sass/partials/design/blocks/_header-images.scss */
+  .header-img .header-img-title {
+    font-size: 2em;
+  }
+}
+/* line 92, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+.no-mq .header-img .header-img-title {
+  font-size: 2em;
 }
 
 /* line 1, ../sass/partials/design/pages/_front.scss */
@@ -1303,4 +1326,36 @@ main, header, footer, section, aside {
   margin-left: 0;
   margin-right: 0;
   clear: none;
+}
+
+/* line 2, ../sass/partials/design/views/_products.scss */
+#auction-nudge-items div.an-item {
+  padding: 3% 2% !important;
+}
+/* line 4, ../sass/partials/design/views/_products.scss */
+#auction-nudge-items div.an-item .an-title {
+  font-size: 1.3em;
+  line-height: 1.4;
+}
+/* line 7, ../sass/partials/design/views/_products.scss */
+#auction-nudge-items div.an-item .an-title a {
+  color: inherit;
+}
+/* line 11, ../sass/partials/design/views/_products.scss */
+#auction-nudge-items div.an-item div.an-image {
+  margin: 0px 20px 0 0 !important;
+}
+/* line 14, ../sass/partials/design/views/_products.scss */
+#auction-nudge-items div.an-item div.an-price {
+  font-size: 1.2em;
+}
+/* line 17, ../sass/partials/design/views/_products.scss */
+#auction-nudge-items div.an-item .an-view a {
+  font-weight: 700;
+  background: #0f7abd;
+  color: #fff;
+  display: inline-block;
+  padding: .25em 1em;
+  border-radius: 3px;
+  margin-top: 10px;
 }
