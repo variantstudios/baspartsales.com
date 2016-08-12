@@ -2,10 +2,3 @@
 	<ul class="menu">{% for item in include.nav %}
 		<li><a href="{{ item.url }}" class="{% if item.url == navurl %}active{% endif %}">{{ item.text }}</a>{% if item.subitems %}{% include nav.html nav=item.subitems %}{% endif %}</li>{% endfor %}{% for product in site.products  %}<li><a href="{{ product.url }}" class="">{{ product.title }}</a></li>{% endfor %}
 	</ul>
-<div class="bottom">
-	<h3>Contact Us</h3>
-	<p>Serving aviation since 1946 <br>
-		711 Crosier Ave, Greeley, CO 80631 <br>
-		970.313.4823
-	</p>
-</div>
