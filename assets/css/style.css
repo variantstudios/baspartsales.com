@@ -669,106 +669,14 @@ ul.pager li a:visited {
   margin: 0;
 }
 
-/* line 3, ../sass/partials/design/blocks/_main-navigation.scss */
-ul.nav__list {
-  margin: 0;
-  padding: 0;
-}
-/* line 6, ../sass/partials/design/blocks/_main-navigation.scss */
-ul.nav__list li {
-  display: block;
-}
-
-/* line 11, ../sass/partials/design/blocks/_main-navigation.scss */
-.nav a, .nav label {
-  display: block;
-  padding: .85rem;
-  color: #fff;
-  -webkit-transition: all .25s ease-in;
-  transition: all .25s ease-in;
-}
-
-/* line 21, ../sass/partials/design/blocks/_main-navigation.scss */
-.nav a:focus, .nav a:hover, .nav label:focus, .nav label:hover {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-/* line 26, ../sass/partials/design/blocks/_main-navigation.scss */
-.nav label {
-  cursor: pointer;
-}
-
-/**
- * Styling first level lists items
- */
-/* line 32, ../sass/partials/design/blocks/_main-navigation.scss */
-.group-list a, .group-list label {
-  padding-left: 1rem;
-}
-
-/* line 38, ../sass/partials/design/blocks/_main-navigation.scss */
-.group-list a:focus, .group-list a:hover, .group-list label:focus, .group-list label:hover {
-  background: #131313;
-}
-
-/**
- * Styling second level list items
- */
-/* line 44, ../sass/partials/design/blocks/_main-navigation.scss */
-.sub-group-list a, .sub-group-list label {
-  padding-left: 1rem;
-}
-
-/**
- * Styling third level list items
- */
-/* line 57, ../sass/partials/design/blocks/_main-navigation.scss */
-.sub-sub-group-list a, .sub-sub-group-list label {
-  padding-left: 1rem;
-}
-
-/**
- * Hide nested lists
- */
-/* line 71, ../sass/partials/design/blocks/_main-navigation.scss */
-.group-list, .sub-group-list, .sub-sub-group-list {
-  height: 100%;
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: max-height .5s ease-in-out;
-  transition: max-height .5s ease-in-out;
-}
-
-/* line 79, ../sass/partials/design/blocks/_main-navigation.scss */
-.nav__list input[type=checkbox]:checked + label + ul {
-  /* reset the height when checkbox is checked */
-  max-height: 1000px;
-}
-
-/**
- * Rotating chevron icon
- */
-/* line 86, ../sass/partials/design/blocks/_main-navigation.scss */
-label > span {
-  float: right;
-  -webkit-transition: -webkit-transform .65s ease;
-  transition: transform .65s ease;
-}
-
-/* line 92, ../sass/partials/design/blocks/_main-navigation.scss */
-.nav__list input[type=checkbox]:checked + label > span {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-/* line 112, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 2, ../sass/partials/design/blocks/_main-navigation.scss */
 .menu {
   padding: 0 0 6em;
   margin: 0;
+  display: none;
 }
 @media (min-width: 50em) {
-  /* line 112, ../sass/partials/design/blocks/_main-navigation.scss */
+  /* line 2, ../sass/partials/design/blocks/_main-navigation.scss */
   .menu {
     padding: 0;
   }
@@ -777,7 +685,7 @@ label > span {
 .no-mq .menu {
   padding: 0;
 }
-/* line 119, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 10, ../sass/partials/design/blocks/_main-navigation.scss */
 .menu li {
   list-style: none;
   margin: 0;
@@ -785,7 +693,7 @@ label > span {
   padding: 0;
 }
 @media (min-width: 50em) {
-  /* line 119, ../sass/partials/design/blocks/_main-navigation.scss */
+  /* line 10, ../sass/partials/design/blocks/_main-navigation.scss */
   .menu li {
     line-height: 3em;
   }
@@ -794,7 +702,7 @@ label > span {
 .no-mq .menu li {
   line-height: 3em;
 }
-/* line 128, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 19, ../sass/partials/design/blocks/_main-navigation.scss */
 .menu li a {
   font-weight: 500;
   font-size: 1em;
@@ -807,7 +715,7 @@ label > span {
   letter-spacing: 1px;
 }
 @media (min-width: 50em) {
-  /* line 128, ../sass/partials/design/blocks/_main-navigation.scss */
+  /* line 19, ../sass/partials/design/blocks/_main-navigation.scss */
   .menu li a {
     margin-left: 1.5em;
     padding: 0;
@@ -818,70 +726,250 @@ label > span {
   margin-left: 1.5em;
   padding: 0;
 }
-/* line 141, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 32, ../sass/partials/design/blocks/_main-navigation.scss */
 .menu li a:hover {
   color: #0f7abd;
 }
-/* line 144, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 35, ../sass/partials/design/blocks/_main-navigation.scss */
 .menu li a:active {
   top: 1px;
   position: relative;
 }
-/* line 150, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 40, ../sass/partials/design/blocks/_main-navigation.scss */
+.menu li ul {
+  background: rgba(255, 255, 255, 0.87);
+}
+/* line 50, ../sass/partials/design/blocks/_main-navigation.scss */
 .menu a, .menu a:visited {
   text-decoration: none;
 }
 
-/* line 154, ../sass/partials/design/blocks/_main-navigation.scss */
-.js .main-nav .menu {
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: max-height .5s ease;
-          transition: max-height .5s ease;
+/* line 55, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_menu li {
+  list-style: none;
+  margin: 0;
+  display: block;
+  padding: 0;
 }
 @media (min-width: 50em) {
-  /* line 154, ../sass/partials/design/blocks/_main-navigation.scss */
-  .js .main-nav .menu {
-    max-height: none;
+  /* line 55, ../sass/partials/design/blocks/_main-navigation.scss */
+  .slicknav_menu li {
+    line-height: 3em;
   }
 }
 /* line 92, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
-.no-mq .js .main-nav .menu {
-  max-height: none;
+.no-mq .slicknav_menu li {
+  line-height: 3em;
 }
-/* line 161, ../sass/partials/design/blocks/_main-navigation.scss */
-.js .main-nav .menu.show {
-  max-height: 500px;
+/* line 64, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_menu li a {
+  font-weight: 500;
+  font-size: 1em;
+  -webkit-transition: color .5s ease;
+          transition: color .5s ease;
+  padding: .75em 1em;
+  display: block;
+  color: #4A4A4A;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+@media (min-width: 50em) {
+  /* line 64, ../sass/partials/design/blocks/_main-navigation.scss */
+  .slicknav_menu li a {
+    padding: 0;
+    padding-left: 1.5em;
+  }
+}
+/* line 92, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+.no-mq .slicknav_menu li a {
+  padding: 0;
+  padding-left: 1.5em;
+}
+/* line 77, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_menu li a:hover {
+  color: #0f7abd;
+}
+/* line 80, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_menu li a:active {
+  top: 1px;
+  position: relative;
+}
+/* line 85, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_menu li ul {
+  background: rgba(255, 255, 255, 0.87);
+}
+/* line 95, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_menu a, .slicknav_menu a:visited {
+  text-decoration: none;
 }
 
+/* line 101, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_btn {
+  display: none;
+}
+
+/* line 104, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_menu {
+  *zoom: 1;
+}
+/* line 106, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_menu .slicknav_menutxt {
+  display: block;
+  line-height: 1.188em;
+  float: left;
+}
+/* line 111, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_menu .slicknav_icon {
+  float: left;
+  width: 1.125em;
+  height: 0.875em;
+  margin: 0.188em 0 0 0.438em;
+}
+/* line 116, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_menu .slicknav_icon:before {
+  background: transparent;
+  width: 1.125em;
+  height: 0.875em;
+  display: block;
+  content: "";
+  position: absolute;
+}
+/* line 125, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_menu .slicknav_no-text {
+  margin: 0;
+}
+/* line 128, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_menu .slicknav_icon-bar {
+  display: block;
+  width: 1.125em;
+  height: 0.125em;
+  border-radius: 1px;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+/* line 139, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_menu:before {
+  content: " ";
+  display: table;
+}
+/* line 143, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_menu:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* line 149, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_nav {
+  clear: both;
+  display: block !important;
+}
+/* line 152, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_nav ul {
+  display: block;
+}
+/* line 155, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_nav li {
+  display: block;
+}
+/* line 158, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_nav .slicknav_arrow {
+  font-size: 0.6em;
+  margin: 0 2em 0 1em;
+  float: right;
+}
+/* line 163, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_nav .slicknav_item {
+  cursor: pointer;
+}
 /* line 165, ../sass/partials/design/blocks/_main-navigation.scss */
-.js .menu-btn {
-  padding: 1em;
-  background: #0f7abd;
-  border: none;
-  color: #fff;
-  font-weight: 700;
-  font-size: 1.1em;
-  text-align: center;
+.slicknav_nav .slicknav_item a {
+  display: inline;
 }
-@media (min-width: 50em) {
-  /* line 165, ../sass/partials/design/blocks/_main-navigation.scss */
-  .js .menu-btn {
-    display: none;
-  }
+/* line 169, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_nav .slicknav_row {
+  display: block;
 }
-/* line 92, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
-.no-mq .js .menu-btn {
-  display: none;
+/* line 172, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_nav a {
+  display: block;
 }
-/* line 176, ../sass/partials/design/blocks/_main-navigation.scss */
-.js .menu-btn img {
-  padding-right: .5em;
+/* line 175, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_nav .slicknav_parent-link a {
+  display: inline;
 }
 
-/* line 180, ../sass/partials/design/blocks/_main-navigation.scss */
-.no-js .menu-btn {
-  display: none;
+/* line 179, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_brand {
+  float: left;
+}
+
+/* line 192, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_menu {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* line 194, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_menu * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* line 197, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_menu .slicknav_menutxt {
+  font-weight: bold;
+}
+/* line 200, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_menu .slicknav_icon-bar {
+  background-color: white;
+}
+
+/* line 205, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_nav {
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  list-style: none;
+  overflow: hidden;
+}
+/* line 212, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_nav ul {
+  list-style: none;
+  overflow: hidden;
+  padding: 0 1em;
+  margin: 0;
+}
+/* line 220, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_nav .slicknav_row:hover {
+  background: #D8D8D8;
+  color: white;
+}
+/* line 226, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_nav a:hover {
+  background: #cccccc;
+  color: #222222;
+}
+/* line 231, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_nav .slicknav_txtnode {
+  margin-left: 15px;
+}
+/* line 234, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_nav .slicknav_item a {
+  padding: 0;
+  margin: 0;
+}
+/* line 238, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_nav .slicknav_parent-link a {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 243, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_brand {
+  color: white;
+  line-height: 30px;
+  padding: 7px 12px;
+  height: 44px;
 }
 
 /* line 1, ../sass/partials/design/blocks/_flexslider.scss */
