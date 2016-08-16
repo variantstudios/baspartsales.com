@@ -2,6 +2,7 @@
 .menu {
   padding: 0 0 6em;
   margin: 0;
+  display: none;
   @include breakpoint($bp-medium, $no-query: '.no-mq') {
     //text-align: right;
     padding: 0;
@@ -50,19 +51,55 @@
     text-decoration: none;
   }
 }
+.slicknav_menu {
+  li {
+    list-style: none;
+    margin: 0;
+    display: block;
+    padding: 0;
+    @include breakpoint($bp-medium, $no-query: '.no-mq') {
+      //display: inline-block;
+      line-height: 3em;
+    }
+    a {
+      font-weight: 500;
+      font-size: 1em;
+      transition: color .5s ease;
+      padding: .75em 1em;
+      display: block;
+      color: #4A4A4A;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      @include breakpoint($bp-medium, $no-query: '.no-mq') {
+        padding: 0;
+        padding-left: 1.5em;
+      }
+      &:hover {
+        color: $color-one;
+      }
+      &:active {
+        top: 1px;
+        position: relative;
+      }
+    }
+    ul {
+
+      background: rgba(255, 255, 255, 0.87);
+    }
+    &:hover {
+      // This is the sub nav on hover
+      ul {
+      }
+    }
+  }
+  a, a:visited {
+    text-decoration: none;
+  }
+}
 
 
 .slicknav_btn {
-  position: relative;
-  display: block;
-  vertical-align: middle;
-  float: right;
-  padding: 0.438em 0.625em 0.438em 0.625em;
-  line-height: 1.125em;
-  cursor: pointer;
-  .slicknav_icon-bar + .slicknav_icon-bar {
-    margin-top: 0.188em;
-  }
+  display: none;
 }
 .slicknav_menu {
   *zoom: 1;
@@ -73,17 +110,17 @@
   }
   .slicknav_icon {
     float: left;
+    width: 1.125em;
+    height: 0.875em;
+    margin: 0.188em 0 0 0.438em;
+    &:before { // Firefox Mobile v42 bugfix
+        background: transparent;
         width: 1.125em;
         height: 0.875em;
-    margin: 0.188em 0 0 0.438em;
-        &:before { // Firefox Mobile v42 bugfix
-            background: transparent;
-            width: 1.125em;
-            height: 0.875em;
-            display: block;
-            content: "";
-            position: absolute;
-        }
+        display: block;
+        content: "";
+        position: absolute;
+    }
   }
   .slicknav_no-text {
     margin: 0;
@@ -111,6 +148,7 @@
 }
 .slicknav_nav {
   clear: both;
+  display: block !important;
   ul {
     display: block;
   }
@@ -118,8 +156,9 @@
     display: block;
   }
   .slicknav_arrow {
-    font-size: 0.8em;
-    margin: 0 0 0 0.4em;
+    font-size: 0.6em;
+    margin: 0 2em 0 1em;
+    float: right;
   }
   .slicknav_item {
     cursor: pointer;
@@ -151,64 +190,40 @@ $color_hover_bg: #ccc;
 $color_hover_text: #222;
 
 .slicknav_menu {
-  font-size: 16px;
   box-sizing: border-box;
-  background: $color_bg;
-  padding: 5px;
   * {
     box-sizing: border-box;
   }
   .slicknav_menutxt {
-    color: $color_text;
     font-weight: bold;
-    text-shadow: 0 1px 3px $color_shadow;
   }
   .slicknav_icon-bar {
     background-color: $color_text;
   }
 }
-.slicknav_btn {
-  margin: 5px 5px 6px;
-  text-decoration: none;
-  text-shadow: 0 1px 1px $color_0;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  background-color: $color_btn;
-}
+
 .slicknav_nav {
   color: $color_text;
   margin: 0;
   padding: 0;
-  font-size: 0.875em;
+  font-size: 1em;
   list-style: none;
   overflow: hidden;
   ul {
     list-style: none;
     overflow: hidden;
-    padding: 0;
-    margin: 0 0 0 20px;
+    padding: 0 1em;
+    margin: 0;
+
   }
   .slicknav_row {
-    padding: 5px 10px;
-    margin: 2px 5px;
     &:hover {
-      -webkit-border-radius: 6px;
-      -moz-border-radius: 6px;
-      border-radius: 6px;
-      background: $color_hover_bg;
+      background: #D8D8D8;
       color: $color_text;
     }
   }
   a {
-    padding: 5px 10px;
-    margin: 2px 5px;
-    text-decoration: none;
-    color: $color_text;
     &:hover {
-      -webkit-border-radius: 6px;
-      -moz-border-radius: 6px;
-      border-radius: 6px;
       background: $color_hover_bg;
       color: $color_hover_text;
     }
@@ -227,7 +242,6 @@ $color_hover_text: #222;
 }
 .slicknav_brand {
   color: $color_text;
-  font-size: 18px;
   line-height: 30px;
   padding: 7px 12px;
   height: 44px;

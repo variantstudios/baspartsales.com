@@ -9,7 +9,7 @@ $(document).ready(function() {
   $('.header-wrapper .menu').slicknav({
     label: '',
     duration: 1000,
-    prependTo:'.header-wrapper'
+    prependTo:'.nav-wrap'
   });
 
 });
