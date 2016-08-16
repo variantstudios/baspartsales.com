@@ -10,7 +10,7 @@ html, body {
 .wrap {
   @include clearfix;
   max-width: $container_width;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .site-wrapper {

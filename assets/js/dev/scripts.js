@@ -6,10 +6,15 @@ $(document).ready(function() {
     $('html').addClass('no-mq');
   }
   // Mobile Menu Funcation
+  $(".open-menu").on('click touch', function() {
+    $('.site-wrapper').toggleClass('show');
+  });
+
   $('.header-wrapper .menu').slicknav({
     label: '',
     duration: 1000,
-    prependTo:'.nav-wrap'
+    prependTo:'.nav-wrap',
+    allowParentLinks: true
   });
 
 });

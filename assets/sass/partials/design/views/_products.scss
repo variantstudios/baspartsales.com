@@ -1,6 +1,17 @@
 #auction-nudge-items {
   div.an-item {
     padding: 3% 2% !important;
+    width: 100% !important;
+    max-width: none !important;
+    clear: none !important;
+    display: inline-block;
+    float: none !important;
+    vertical-align: top;
+  @include breakpoint($bp-medium, $no-query: '.no-mq') {
+      padding: 4% 2% !important;
+      width: 33% !important;
+      max-width: none !important;
+    }
     .an-title{
       font-size: 1.3em;
       line-height: 1.4;

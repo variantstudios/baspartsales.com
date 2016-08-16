@@ -20,3 +20,23 @@ main {
   opacity: .5;
   transition: all .4s ease-in;
 }
+
+.page-header {
+  background-image: linear-gradient(90deg, #1B5B86 0%, #4786D0 100%);
+  margin: -2em -1em 2em;
+  padding: 2em 1em;
+  @include breakpoint($bp-large, $no-query: '.no-mq') {
+    margin: -2em -2em 2em;
+    padding: 9em 2em 1em;
+  }
+  * {
+    color: #fff;
+  }
+  .pagetitle {
+    font-size: 3em;
+    margin-bottom: 0;
+  }
+  .desc {
+    font-size: 1.5em;
+  }
+}

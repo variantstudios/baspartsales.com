@@ -796,36 +796,41 @@ ul.pager li a:visited {
 }
 /* line 85, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_menu li ul {
-  background: rgba(255, 255, 255, 0.87);
+  background-image: -webkit-linear-gradient(0deg, #1b5b86 0%, #4786d0 100%);
+  background-image: linear-gradient(90deg, #1b5b86 0%, #4786d0 100%);
 }
-/* line 95, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 87, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_menu li ul a {
+  color: #fff;
+}
+/* line 97, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_menu a, .slicknav_menu a:visited {
   text-decoration: none;
 }
 
-/* line 101, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 103, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_btn {
   display: none;
 }
 
-/* line 104, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 106, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_menu {
   *zoom: 1;
 }
-/* line 106, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 108, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_menu .slicknav_menutxt {
   display: block;
   line-height: 1.188em;
   float: left;
 }
-/* line 111, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 113, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_menu .slicknav_icon {
   float: left;
   width: 1.125em;
   height: 0.875em;
   margin: 0.188em 0 0 0.438em;
 }
-/* line 116, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 118, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_menu .slicknav_icon:before {
   background: transparent;
   width: 1.125em;
@@ -834,11 +839,11 @@ ul.pager li a:visited {
   content: "";
   position: absolute;
 }
-/* line 125, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 127, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_menu .slicknav_no-text {
   margin: 0;
 }
-/* line 128, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 130, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_menu .slicknav_icon-bar {
   display: block;
   width: 1.125em;
@@ -847,83 +852,83 @@ ul.pager li a:visited {
   -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 }
-/* line 139, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 141, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_menu:before {
   content: " ";
   display: table;
 }
-/* line 143, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 145, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_menu:after {
   content: " ";
   display: table;
   clear: both;
 }
 
-/* line 149, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 151, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_nav {
   clear: both;
   display: block !important;
 }
-/* line 152, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 154, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_nav ul {
   display: block;
 }
-/* line 155, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 157, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_nav li {
   display: block;
 }
-/* line 158, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 160, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_nav .slicknav_arrow {
-  font-size: 0.6em;
+  font-size: 0.5em;
   margin: 0 2em 0 1em;
   float: right;
 }
-/* line 163, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 165, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_nav .slicknav_item {
   cursor: pointer;
 }
-/* line 165, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 167, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_nav .slicknav_item a {
   display: inline;
 }
-/* line 169, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 171, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_nav .slicknav_row {
   display: block;
 }
-/* line 172, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 174, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_nav a {
   display: block;
 }
-/* line 175, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 177, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_nav .slicknav_parent-link a {
   display: inline;
 }
 
-/* line 179, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 181, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_brand {
   float: left;
 }
 
-/* line 192, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 194, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_menu {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-/* line 194, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 196, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_menu * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-/* line 197, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 199, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_menu .slicknav_menutxt {
   font-weight: bold;
 }
-/* line 200, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 202, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_menu .slicknav_icon-bar {
   background-color: white;
 }
 
-/* line 205, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 207, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_nav {
   color: white;
   margin: 0;
@@ -932,39 +937,63 @@ ul.pager li a:visited {
   list-style: none;
   overflow: hidden;
 }
-/* line 212, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 214, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_nav ul {
   list-style: none;
   overflow: hidden;
   padding: 0 1em;
   margin: 0;
 }
-/* line 220, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 222, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_nav .slicknav_row:hover {
-  background: #D8D8D8;
+  -webkit-transition: all .1s linear;
+          transition: all .1s linear;
   color: white;
 }
-/* line 226, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 229, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_nav a:hover {
   background: #cccccc;
   color: #222222;
 }
-/* line 231, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 234, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_nav .slicknav_txtnode {
   margin-left: 15px;
 }
-/* line 234, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 237, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_nav .slicknav_item a {
   padding: 0;
   margin: 0;
 }
-/* line 238, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 241, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_nav .slicknav_parent-link a {
   padding: 0;
   margin: 0;
 }
+/* line 245, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_nav .slicknav_parent ul {
+  padding: 0;
+}
+/* line 247, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_nav .slicknav_parent ul li:hover {
+  -webkit-transition: all .1s linear;
+          transition: all .1s linear;
+  border-left: 3px solid #fff;
+  background: none;
+}
+/* line 251, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_nav .slicknav_parent ul li:hover a {
+  -webkit-transition: none;
+          transition: none;
+  background: none;
+  color: #fff;
+  margin-left: -3px;
+}
+/* line 259, ../sass/partials/design/blocks/_main-navigation.scss */
+.slicknav_nav .slicknav_open .slicknav_row {
+  background: #D8D8D8;
+}
 
-/* line 243, ../sass/partials/design/blocks/_main-navigation.scss */
+/* line 264, ../sass/partials/design/blocks/_main-navigation.scss */
 .slicknav_brand {
   color: white;
   line-height: 30px;
@@ -1266,6 +1295,39 @@ main {
           transition: all .4s ease-in;
 }
 
+/* line 24, ../sass/partials/design/regions/_main.scss */
+.page-header {
+  background-image: -webkit-linear-gradient(0deg, #1b5b86 0%, #4786d0 100%);
+  background-image: linear-gradient(90deg, #1b5b86 0%, #4786d0 100%);
+  margin: -2em -1em 2em;
+  padding: 2em 1em;
+}
+@media (min-width: 62.5em) {
+  /* line 24, ../sass/partials/design/regions/_main.scss */
+  .page-header {
+    margin: -2em -2em 2em;
+    padding: 9em 2em 1em;
+  }
+}
+/* line 92, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+.no-mq .page-header {
+  margin: -2em -2em 2em;
+  padding: 9em 2em 1em;
+}
+/* line 32, ../sass/partials/design/regions/_main.scss */
+.page-header * {
+  color: #fff;
+}
+/* line 35, ../sass/partials/design/regions/_main.scss */
+.page-header .pagetitle {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+/* line 39, ../sass/partials/design/regions/_main.scss */
+.page-header .desc {
+  font-size: 1.5em;
+}
+
 /* line 1, ../sass/partials/design/regions/_body.scss */
 html, body {
   -webkit-box-sizing: border-box;
@@ -1284,8 +1346,8 @@ html, body {
 
 /* line 10, ../sass/partials/design/regions/_body.scss */
 .wrap {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 2000px;
+  margin: 0;
 }
 /* line 13, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/toolkit-2.3.0/stylesheets/toolkit/_clearfix.scss */
 .wrap:after {
@@ -1419,25 +1481,45 @@ main, header, footer, section, aside {
 /* line 2, ../sass/partials/design/views/_products.scss */
 #auction-nudge-items div.an-item {
   padding: 3% 2% !important;
+  width: 100% !important;
+  max-width: none !important;
+  clear: none !important;
+  display: inline-block;
+  float: none !important;
+  vertical-align: top;
 }
-/* line 4, ../sass/partials/design/views/_products.scss */
+@media (min-width: 50em) {
+  /* line 2, ../sass/partials/design/views/_products.scss */
+  #auction-nudge-items div.an-item {
+    padding: 4% 2% !important;
+    width: 33% !important;
+    max-width: none !important;
+  }
+}
+/* line 92, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+.no-mq #auction-nudge-items div.an-item {
+  padding: 4% 2% !important;
+  width: 33% !important;
+  max-width: none !important;
+}
+/* line 15, ../sass/partials/design/views/_products.scss */
 #auction-nudge-items div.an-item .an-title {
   font-size: 1.3em;
   line-height: 1.4;
 }
-/* line 7, ../sass/partials/design/views/_products.scss */
+/* line 18, ../sass/partials/design/views/_products.scss */
 #auction-nudge-items div.an-item .an-title a {
   color: inherit;
 }
-/* line 11, ../sass/partials/design/views/_products.scss */
+/* line 22, ../sass/partials/design/views/_products.scss */
 #auction-nudge-items div.an-item div.an-image {
   margin: 0px 20px 0 0 !important;
 }
-/* line 14, ../sass/partials/design/views/_products.scss */
+/* line 25, ../sass/partials/design/views/_products.scss */
 #auction-nudge-items div.an-item div.an-price {
   font-size: 1.2em;
 }
-/* line 17, ../sass/partials/design/views/_products.scss */
+/* line 28, ../sass/partials/design/views/_products.scss */
 #auction-nudge-items div.an-item .an-view a {
   font-weight: 700;
   background: #0f7abd;

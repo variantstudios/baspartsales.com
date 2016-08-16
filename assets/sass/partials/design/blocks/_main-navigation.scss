@@ -83,8 +83,10 @@
       }
     }
     ul {
-
-      background: rgba(255, 255, 255, 0.87);
+        background-image: linear-gradient(90deg, #1B5B86 0%, #4786D0 100%);
+        a {
+          color: #fff;
+        }
     }
     &:hover {
       // This is the sub nav on hover
@@ -156,7 +158,7 @@
     display: block;
   }
   .slicknav_arrow {
-    font-size: 0.6em;
+    font-size: 0.5em;
     margin: 0 2em 0 1em;
     float: right;
   }
@@ -218,7 +220,8 @@ $color_hover_text: #222;
   }
   .slicknav_row {
     &:hover {
-      background: #D8D8D8;
+      transition: all .1s linear;
+      //background: #D8D8D8;
       color: $color_text;
     }
   }
@@ -239,6 +242,24 @@ $color_hover_text: #222;
     padding: 0;
     margin: 0;
   }
+  .slicknav_parent ul {
+    padding: 0;
+    li:hover {
+      transition: all .1s linear;
+      border-left: 3px solid #fff;
+      background: none;
+      a {
+        transition: none;
+        background: none;
+        color: #fff;
+        margin-left: -3px;
+      }
+    }
+  }
+  .slicknav_open .slicknav_row {
+        background: #D8D8D8;
+  }
+
 }
 .slicknav_brand {
   color: $color_text;
