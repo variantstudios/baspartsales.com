@@ -1,0 +1,30 @@
+.search-box-wrap {
+  padding: 1em 1em;
+  margin: 0 auto;
+  max-width: 670px;
+
+  @include breakpoint($bp-medium, $no-query: '.no-mq') {
+
+    }
+
+  input[type="search"] {
+    -webkit-appearance: none;
+    font-size: 1.8em;
+    color: #A4A4A4;
+    padding: .25em 1em;
+    border: 0;
+    border-radius: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 30px 0px rgba(43,43,43,0.88);
+    width: 100%;
+  }
+}
+.search-box {
+  position: relative;
+  margin-bottom: 1.5em;
+  input[type="submit"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

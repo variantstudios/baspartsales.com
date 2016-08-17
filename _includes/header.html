@@ -1,12 +1,19 @@
-<div class="mobile-header">
-  <div class="open-menu">Menu</div>
-   <a href="/" class="small-logo"><img src="/assets/images/logo-sm.png" alt="{{site.title}}"></a>
-</div>
 <header itemscope class="header-wrapper">
   <div class="site-name logo">
       <a href="/"><img src="/assets/images/logo.png" alt="{{site.title}}"></a>
   </div>
-    <p class="address-info">711 Crosier Ave, Greeley, CO 80631 <br>
-  970.313.4823</p>
-  {% include nav.html nav = site.data.menu %}
+
+  <div class="search-box-wrap">
+    <div class="search-box">
+      <input type="search">
+      <input type="submit" vaule="search">
+    </div>
+    <div class="search-help">Search Keywords, Brands, Part Numbers</div>
+  </div>
+
 </header>
+
+<div class="nav-wrapper">
+ {% include nav.html nav = site.data.menu %}
+ <p class="address-info"><span>970.313.4823</span> 711 Crosier Ave, Greeley, CO 80631</p>
+</div>

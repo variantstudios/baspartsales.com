@@ -1,8 +1,7 @@
 
 .menu {
-  padding: 0 0 6em;
+  padding: 0 0 0em;
   margin: 0;
-  display: none;
   @include breakpoint($bp-medium, $no-query: '.no-mq') {
     //text-align: right;
     padding: 0;
@@ -10,24 +9,18 @@
   li {
     list-style: none;
     margin: 0;
-    display: block;
+    display: inline-block;
     padding: 0;
     @include breakpoint($bp-medium, $no-query: '.no-mq') {
-      //display: inline-block;
-      line-height: 3em;
     }
     a {
-      font-weight: 500;
+      font-weight: 700;
       font-size: 1em;
       transition: color .5s ease;
-      padding: .75em 1em;
+      padding: 0 1em;
       display: block;
       color: #4A4A4A;
-      text-transform: uppercase;
-      letter-spacing: 1px;
       @include breakpoint($bp-medium, $no-query: '.no-mq') {
-        margin-left: 1.5em;
-        padding: 0;
       }
       &:hover {
         color: $color-one;
@@ -50,220 +43,4 @@
   a, a:visited {
     text-decoration: none;
   }
-}
-.slicknav_menu {
-  li {
-    list-style: none;
-    margin: 0;
-    display: block;
-    padding: 0;
-    @include breakpoint($bp-medium, $no-query: '.no-mq') {
-      //display: inline-block;
-      line-height: 3em;
-    }
-    a {
-      font-weight: 500;
-      font-size: 1em;
-      transition: color .5s ease;
-      padding: .75em 1em;
-      display: block;
-      color: #4A4A4A;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      @include breakpoint($bp-medium, $no-query: '.no-mq') {
-        padding: 0;
-        padding-left: 1.5em;
-      }
-      &:hover {
-        color: $color-one;
-      }
-      &:active {
-        top: 1px;
-        position: relative;
-      }
-    }
-    ul {
-        background-image: linear-gradient(90deg, #1B5B86 0%, #4786D0 100%);
-        a {
-          color: #fff;
-        }
-    }
-    &:hover {
-      // This is the sub nav on hover
-      ul {
-      }
-    }
-  }
-  a, a:visited {
-    text-decoration: none;
-  }
-}
-
-
-.slicknav_btn {
-  display: none;
-}
-.slicknav_menu {
-  *zoom: 1;
-  .slicknav_menutxt {
-    display: block;
-    line-height: 1.188em;
-    float: left;
-  }
-  .slicknav_icon {
-    float: left;
-    width: 1.125em;
-    height: 0.875em;
-    margin: 0.188em 0 0 0.438em;
-    &:before { // Firefox Mobile v42 bugfix
-        background: transparent;
-        width: 1.125em;
-        height: 0.875em;
-        display: block;
-        content: "";
-        position: absolute;
-    }
-  }
-  .slicknav_no-text {
-    margin: 0;
-  }
-  .slicknav_icon-bar {
-    display: block;
-    width: 1.125em;
-    height: 0.125em;
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
-    border-radius: 1px;
-    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-  }
-  &:before {
-    content: " ";
-    display: table;
-  }
-  &:after {
-    content: " ";
-    display: table;
-    clear: both;
-  }
-}
-.slicknav_nav {
-  clear: both;
-  display: block !important;
-  ul {
-    display: block;
-  }
-  li {
-    display: block;
-  }
-  .slicknav_arrow {
-    font-size: 0.5em;
-    margin: 0 2em 0 1em;
-    float: right;
-  }
-  .slicknav_item {
-    cursor: pointer;
-    a {
-      display: inline;
-    }
-  }
-  .slicknav_row {
-    display: block;
-  }
-  a {
-    display: block;
-  }
-  .slicknav_parent-link a {
-    display: inline;
-  }
-}
-.slicknav_brand {
-  float: left;
-}
-
-//colors
-$color_0: rgba(255, 255, 255, 0.75);
-$color_btn: #222;
-$color_text: #fff;
-$color_shadow: #000;
-$color_bg: #4c4c4c;
-$color_hover_bg: #ccc;
-$color_hover_text: #222;
-
-.slicknav_menu {
-  box-sizing: border-box;
-  * {
-    box-sizing: border-box;
-  }
-  .slicknav_menutxt {
-    font-weight: bold;
-  }
-  .slicknav_icon-bar {
-    background-color: $color_text;
-  }
-}
-
-.slicknav_nav {
-  color: $color_text;
-  margin: 0;
-  padding: 0;
-  font-size: 1em;
-  list-style: none;
-  overflow: hidden;
-  ul {
-    list-style: none;
-    overflow: hidden;
-    padding: 0 1em;
-    margin: 0;
-
-  }
-  .slicknav_row {
-    &:hover {
-      transition: all .1s linear;
-      //background: #D8D8D8;
-      color: $color_text;
-    }
-  }
-  a {
-    &:hover {
-      background: $color_hover_bg;
-      color: $color_hover_text;
-    }
-  }
-  .slicknav_txtnode {
-    margin-left: 15px;
-  }
-  .slicknav_item a {
-    padding: 0;
-    margin: 0;
-  }
-  .slicknav_parent-link a {
-    padding: 0;
-    margin: 0;
-  }
-  .slicknav_parent ul {
-    padding: 0;
-    li:hover {
-      transition: all .1s linear;
-      border-left: 3px solid #fff;
-      background: none;
-      a {
-        transition: none;
-        background: none;
-        color: #fff;
-        margin-left: -3px;
-      }
-    }
-  }
-  .slicknav_open .slicknav_row {
-        background: #D8D8D8;
-  }
-
-}
-.slicknav_brand {
-  color: $color_text;
-  line-height: 30px;
-  padding: 7px 12px;
-  height: 44px;
 }
