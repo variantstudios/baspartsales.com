@@ -1,6 +1,6 @@
 {% assign navurl = page.url | remove: 'index.html' %}
-<div class="nav-wrap"></div>
-	<ul class="menu">{% for item in include.nav %}
+	<nav class="site-navigation">
+  <ul class="menu">{% for item in include.nav %}
   		<li>
         <a href="{{ item.url }}" class="{% if item.url == navurl %}active{% endif %}">{{ item.text }}</a>
         {% if item.subitems %}
@@ -8,16 +8,5 @@
         {% endif %}
       </li>
     {% endfor %}
-    {% for product in site.products  %}
-      <li>
-        <a href="{{ product.url }}" class="">{{ product.title }}</a>
-         <ul>
-           <li><a href="#">One</a></li>
-           <li><a href="#">Two</a></li>
-           <li><a href="#">Three</a></li>
-           <li><a href="#">Four</a></li>
-           <li><a href="#">Five</a></li>
-         </ul>
-      </li>
-    {% endfor %}
 	</ul>
+</nav>
