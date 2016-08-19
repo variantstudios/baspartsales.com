@@ -1,3 +1,37 @@
 .front {
   
 }
+
+.site-intro {
+  padding-top: 3em;
+  text-align: center;
+ @include breakpoint($bp-medium, $no-query: '.no-mq') {
+    @include grid-span(5.5,1);
+  }
+  h1 {
+   font-family: $heading-font-family;
+   margin: 0;
+   font-size: 1.5em;
+  }
+  h2 {
+    color: $color-one;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    font-size: 1.75em;
+    margin-bottom: 1em;
+  }
+  img {
+    display: inline-block;
+    padding-bottom: 1.2em;
+  }
+}
+
+.site-intro-image {
+  padding-top: 1em;
+  @include breakpoint($bp-medium, $no-query: '.no-mq') {
+    @include grid-span(5.5,7.5);
+    padding-top: 3em;
+
+  }
+}

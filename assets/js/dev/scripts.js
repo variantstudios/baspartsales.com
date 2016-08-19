@@ -10,11 +10,4 @@ $(document).ready(function() {
     $('.site-wrapper').toggleClass('show');
   });
 
-  $('.header-wrapper .menu').slicknav({
-    label: '',
-    duration: 1000,
-    prependTo:'.nav-wrap',
-    allowParentLinks: true
-  });
-
 });

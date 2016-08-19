@@ -1,4 +1,7 @@
-
+.nav-wrapper {
+  background: #fff;
+  font-size: 1.1em;
+}
 .menu {
   padding: 0 0 0em;
   margin: 0;
@@ -17,10 +20,11 @@
       font-weight: 700;
       font-size: 1em;
       transition: color .5s ease;
-      padding: 0 1em;
+      padding: 0 0.5em;
       display: block;
       color: #4A4A4A;
       @include breakpoint($bp-medium, $no-query: '.no-mq') {
+        padding: 0 1em;
       }
       &:hover {
         color: $color-one;
