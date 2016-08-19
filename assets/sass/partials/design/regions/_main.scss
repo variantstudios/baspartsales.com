@@ -1,12 +1,12 @@
 main {
   display: block;
-  padding: 2em 1em;
+  padding: 2em 2em;
+  background: $main-bg;
   @include breakpoint($bp-large, $no-query: '.no-mq') {
     padding: 2em;
   }
 }
 .main-wrapper { 
-
   transition: all .4s ease-in;
   @include breakpoint($bp-large, $no-query: '.no-mq') {
     

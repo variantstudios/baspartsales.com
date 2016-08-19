@@ -13,8 +13,10 @@
   font-size: 1em;
   font-weight: 300;
   margin: 0;
+  padding-top:.75em;
   @include breakpoint($bp-medium, $no-query: ".no-mq") {
     padding-left: 1em;
+    padding-top: 0;
   }
   @include breakpoint($bp-large, $no-query: ".no-mq") {
     padding-left: 2em;
@@ -30,7 +32,9 @@
   text-align: center;
   padding: 1em 0;
   .site-navigation, .address-info {
-    display: inline-block;
-    vertical-align: middle;
+    @include breakpoint($bp-medium, $no-query: ".no-mq") {
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
 }

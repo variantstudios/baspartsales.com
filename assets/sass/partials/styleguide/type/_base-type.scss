@@ -5,6 +5,10 @@ html {
 
 body {
   color: $body-copy-color;
+  font-size: 90%;
+  @include breakpoint($bp-medium, $no-query: '.no-mq') {
+    font-size: 100%;
+  }
 }
 
 p {

@@ -1,1 +1,1 @@
-$(document).ready(function(){Modernizr.mq("only all")?$("html").addClass("mq"):$("html").addClass("no-mq"),$(".open-menu").on("click touch",function(){$(".site-wrapper").toggleClass("show")}),$(".header-wrapper .menu").slicknav({label:"",duration:1e3,prependTo:".nav-wrap",allowParentLinks:!0})});
+$(document).ready(function(){Modernizr.mq("only all")?$("html").addClass("mq"):$("html").addClass("no-mq"),$(".open-menu").on("click touch",function(){$(".site-wrapper").toggleClass("show")})});

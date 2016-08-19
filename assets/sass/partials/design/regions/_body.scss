@@ -10,13 +10,12 @@ html, body {
 .wrap {
   @include clearfix;
   max-width: $container_width;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .site-wrapper {
   margin: 0 auto;
   height: 100%;
-  //max-width: $container_width;
 }
 
 main, header, footer, section, aside {
