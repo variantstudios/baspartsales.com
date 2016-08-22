@@ -4,6 +4,39 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 
 
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var targetURL = "http://www.variantstudios.net/recaptcha.php";
+        $("#form").submit(function(ev) {
+            ev.preventDefault();
+            var formData = $(this).serialize();
+            $.ajax({
+                type: 'POST', url: targetURL, data: formData,
+                cache: false,
+                success: function(data) {
+                    console.log(data);
+                    if (data == "true") {
+                        $('.reponse').html('<p><em>worked!</em></p>');
+                        grecaptcha.reset();
+                        $('#form').trigger("reset");
+                    } else {
+                        $('.reponse').html('<p><em>fail!</em></p>');
+                        //grecaptcha.reset();
+                    }
+                },
+                error: function(request, status, error) {
+                    console.log(request, status, error);
+                    $('.reponse').html('<p><em>really failed!</em></p>');
+                    grecaptcha.reset();
+                }
+            });
+
+        });
+    });
+</script>
+
+
   <script type="text/javascript">
   $(document).ready(function() {
     $(".header-wrapper").backstretch("{{ page.header_image_path }}");
