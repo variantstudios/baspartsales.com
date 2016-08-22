@@ -914,6 +914,23 @@ ul#an-page-bot + div {
   display: none;
 }
 
+/* line 69, ../sass/partials/design/blocks/_search.scss */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+/* line 75, ../sass/partials/design/blocks/_search.scss */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+          transition: background-color 5000s ease-in-out 0s;
+}
+
 /* line 1, ../sass/partials/design/pages/_front.scss */
 section.front {
   /*position: absolute;

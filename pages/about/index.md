@@ -1,9 +1,11 @@
 ---
 title: About
-permalink: "/about/"
-description: This is just a sample general page.
-header_image_path: https://hd.unsplash.com/photo-1427464407917-c817c9a0a6f6
 layout: page
+permalink: "/about/"
+header_image_path: https://hd.unsplash.com/photo-1427464407917-c817c9a0a6f6
+seo:
+  page_title: 'BAS Part Sales'
+  page_description: "Here's the page description. Replace me!"
 ---
 
 BAS Part Sales, LLC is a sister company to the very high regarded Beegles Aircraft Service, INC, all located in Greeley, CO.  BAS has been a separate entity and established since 2012 and going strong today.  With our small staff of 6 employees you are sure you will get the proper attention you need in a timely manner.    
