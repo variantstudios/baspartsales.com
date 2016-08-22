@@ -1,0 +1,44 @@
+<script>
+    var get_params = function(search_string) {
+        var parse = function(params, pairs) {
+            var pair = pairs[0];
+            var parts = pair.split('=');
+            var key = decodeURIComponent(parts[0]);
+            var value = decodeURIComponent(parts.slice(1).join('='));
+            // Handle multiple parameters of the same name
+            if (typeof params[key] === "undefined") {
+                params[key] = value;
+            } else {
+                params[key] = [].concat(params[key], value);
+            }
+            return pairs.length == 1
+                ? params
+                : parse(params, pairs.slice(1))
+        }
+        // Get rid of leading ?
+        return search_string.length == 0
+            ? {}
+            : parse({}, search_string.substr(1).split('&'));
+    }
+    var params = get_params(location.search);
+
+    // Finally, to get the param you want
+    window.search = params['s'];
+    //console.log(search);
+
+    if (search === undefined || search === null || search === '') {
+        console.log("false");
+        origurl = "http://www.auctionnudge.com/item_build/js/SellerID/baspartsales/siteid/0/theme/responsive/MaxEntries/20/page/init/show_logo/1/blank/1/img_size/120";
+        newurl = '"' + origurl + '"';
+    } else {
+        //console.log("true");
+        var search_input = document.querySelector('input[class="search"]');
+        search_input.value = search;
+        origurl = "http://www.auctionnudge.com/item_build/js/SellerID/baspartsales/siteid/0/theme/responsive/MaxEntries/20/page/init/show_logo/1/blank/1/img_size/120/keyword/";
+        keyword = params['s'];
+        newurl = '"' + origurl + keyword + '"';
+    }
+    document.write('<script src=' + newurl + '>\x3C/script>');
+    //console.log(newurl);
+</script>
+<div id="auction-nudge-items" class="auction-nudge"></div>

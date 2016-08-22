@@ -1,8 +1,9 @@
 
-<form action="#" method="post" class="contact-form">
-  <input type="hidden" name="_to" value="team@variantstudios.com">
+<!-- <form action="#" method="post" class="contact-form"> -->
+<form id="form" method="post" class="contact-form">
+  <!-- <input type="hidden" name="_to" value="team@variantstudios.com">
   <input type="hidden" name="_subject" value="Contact Form">
-   <input type="text" name="_gotcha" style="display: none;">
+   <input type="text" name="_gotcha" style="display: none;"> -->
     <div class="webform-component">
         <label for="name">Name</label>
         <input type="text" name="name" id="name" required="">
@@ -15,5 +16,39 @@
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="6"></textarea>
     </div>
+    <div class="g-recaptcha" data-sitekey="6LfS_ScTAAAAAKolM6LAaLTSaSwB9JSgHf8uGu3c"></div>
+    <div class="reponse"></div>
     <input class="sendButton" type="submit" name="Submit" value="Send">
 </form>
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var targetURL = "http://www.variantstudios.net/recaptcha.php";
+        $("#form").submit(function(ev) {
+            ev.preventDefault();
+            var formData = $(this).serialize();
+            $.ajax({
+                type: 'POST', url: targetURL, data: formData,
+                cache: false,
+                success: function(data) {
+                    console.log(data);
+                    if (data == "true") {
+                        $('.reponse').html('<p><em>worked!</em></p>');
+                        grecaptcha.reset();
+                        $('#form').trigger("reset");
+                    } else {
+                        $('.reponse').html('<p><em>fail!</em></p>');
+                        //grecaptcha.reset();
+                    }
+                },
+                error: function(request, status, error) {
+                    console.log(request, status, error);
+                    $('.reponse').html('<p><em>really failed!</em></p>');
+                    grecaptcha.reset();
+                }
+            });
+
+        });
+    });
+</script>
