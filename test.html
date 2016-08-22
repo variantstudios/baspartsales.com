@@ -1,63 +1,62 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>BAS Part Sales</title>
-	</head>
-	<body>
-		<h1>BAS Part Sales</h1>
-		<form action="/" method="get">
+    <head>
+        <meta charset="utf-8">
+        <title>BAS Part Sales</title>
+    </head>
+    <body>
+        <h1>BAS Part Sales</h1>
+        <form action="/" method="get">
 
-					<label for="keyword">Keyword</label>
-					<input type="text" name="c" value="actuators" id="c">
+            <label for="keyword">Keyword</label>
+            <input type="text" name="c" value="actuators" id="c">
 
+        </form>
 
-	</form>
+        <script>
+            var get_params = function(search_string) {
 
+                var parse = function(params, pairs) {
+                    var pair = pairs[0];
+                    var parts = pair.split('=');
+                    var key = decodeURIComponent(parts[0]);
+                    var value = decodeURIComponent(parts.slice(1).join('='));
 
+                    // Handle multiple parameters of the same name
+                    if (typeof params[key] === "undefined") {
+                        params[key] = value;
+                    } else {
+                        params[key] = [].concat(params[key], value);
+                    }
 
-		<script>
-		    var get_params = function(search_string) {
+                    return pairs.length == 1
+                        ? params
+                        : parse(params, pairs.slice(1))
+                }
 
-  var parse = function(params, pairs) {
-    var pair = pairs[0];
-    var parts = pair.split('=');
-    var key = decodeURIComponent(parts[0]);
-    var value = decodeURIComponent(parts.slice(1).join('='));
+                // Get rid of leading ?
+                return search_string.length == 0
+                    ? {}
+                    : parse({}, search_string.substr(1).split('&'));
+            }
 
-    // Handle multiple parameters of the same name
-    if (typeof params[key] === "undefined") {
-      params[key] = value;
-    } else {
-      params[key] = [].concat(params[key], value);
-    }
+            var params = get_params(location.search);
 
-    return pairs.length == 1 ? params : parse(params, pairs.slice(1))
-  }
+            // Finally, to get the param you want
+            params['c'];
+            console.log(params['c']);
 
-  // Get rid of leading ?
-  return search_string.length == 0 ? {} : parse({}, search_string.substr(1).split('&'));
-}
+            origurl = "http://www.auctionnudge.com/item_build/js/SellerID/baspartsales/siteid/0/theme/responsive/MaxEntries/6/cats_output/dropdown/page/init/show_logo/1/img_size/80/keyword/";
+            keyword = "rods";
+            newurl = '"' + origurl + keyword + '"';
+            document.write('<script src=' + newurl + '>\x3C/script>');
+            console.log(newurl);
+        </script>
+        <!-- document.write(window.newurl); -->
 
-var params = get_params(location.search);
+        <!--<script type="text/javascript" src="//www.auctionnudge.com/item_build/js/SellerID/baspartsales/siteid/0/theme/responsive/MaxEntries/6/cats_output/dropdown/page/init/show_logo/1/img_size/80/keyword/actuators"></script>-->
 
-// Finally, to get the param you want
-params['c'];
-console.log(params['c']);
+        <div id="auction-nudge-items" class="auction-nudge"></div>
 
-origurl="http://www.auctionnudge.com/item_build/js/SellerID/baspartsales/siteid/0/theme/responsive/MaxEntries/6/cats_output/dropdown/page/init/show_logo/1/img_size/80/keyword/";
-keyword="rods";
-newurl = "<script>";
-document.write('<script src="http://www.auctionnudge.com/item_build/js/SellerID/baspartsales/siteid/0/theme/responsive/MaxEntries/6/cats_output/dropdown/page/init/show_logo/1/img_size/80/keyword/actuators">\x3C/script>');
-console.log(newurl);
-
-
-</script>
-<!-- document.write(window.newurl); -->
-
-<!--<script type="text/javascript" src="//www.auctionnudge.com/item_build/js/SellerID/baspartsales/siteid/0/theme/responsive/MaxEntries/6/cats_output/dropdown/page/init/show_logo/1/img_size/80/keyword/actuators"></script>-->
-
-		<div id="auction-nudge-items" class="auction-nudge"></div>
-
-	</body>
+    </body>
 </html>
