@@ -47,10 +47,10 @@ console.log(params['c']);
 
 origurl="http://www.auctionnudge.com/item_build/js/SellerID/baspartsales/siteid/0/theme/responsive/MaxEntries/6/cats_output/dropdown/page/init/show_logo/1/img_size/80/keyword/";
 keyword="rods";
-window.newurl= '"' + origurl + keyword + '"';
+window.newurl= '<script type="text/javascript" src="'+ origurl + keyword +'"></script>';
 console.log(window.newurl);
 
-document.write('<script type=&quot;text/javascript&quot; src='+ newurl +'></script>');
+document.write(window.newurl);
 </script>
 
 
