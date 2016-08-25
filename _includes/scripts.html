@@ -22,7 +22,7 @@
                         $('#form').trigger("reset");
                     } else {
                         $('.reponse').html('<p><em>fail!</em></p>');
-                        //grecaptcha.reset();
+                        grecaptcha.reset();
                     }
                 },
                 error: function(request, status, error) {
