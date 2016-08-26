@@ -11,29 +11,34 @@
         $("#form").submit(function(ev) {
             ev.preventDefault();
             var formData = $(this).serialize();
-            $.ajax({
+                        $.ajax({
                 type: 'POST', url: targetURL, data: formData,
                 cache: false,
                 success: function(data) {
                     console.log(data);
                     if (data == "true") {
-                        $('.reponse').html('<p><em>worked!</em></p>');
+                        $('#form-message').css("display","block");
+                        $("html, body").delay(0).animate({scrollTop: $('#form-message').offset().top }, 2000);
+                        $('#form-message').hide(0).delay(300).fadeIn(2000);
+                        $('#form-message').delay(6000).fadeOut(2000);
                         grecaptcha.reset();
                         $('#form').trigger("reset");
                     } else {
-                        $('.reponse').html('<p><em>fail!</em></p>');
+                        $('#fail').hide(0).delay(300).fadeIn(2000);
+                        $('#fail').delay(10000).fadeOut(2000);
                         grecaptcha.reset();
                     }
                 },
                 error: function(request, status, error) {
-                    console.log(request, status, error);
-                    $('.reponse').html('<p><em>really failed!</em></p>');
+                    $('#fail').hide(0).delay(300).fadeIn(2000);
+                    $('#fail').delay(6000).fadeOut(2000);
                     grecaptcha.reset();
                 }
             });
 
         });
     });
+
 </script>
 
 
