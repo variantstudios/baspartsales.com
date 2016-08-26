@@ -931,6 +931,27 @@ input:-webkit-autofill:active {
           transition: background-color 5000s ease-in-out 0s;
 }
 
+/* line 1, ../sass/partials/design/pages/_contact.scss */
+div#form-message {
+  background: #eaeaea;
+  padding: 1em;
+  font-weight: 700;
+  border-radius: 3px;
+  display: none;
+}
+
+/* line 8, ../sass/partials/design/pages/_contact.scss */
+div#fail {
+  font-weight: 700;
+  color: red;
+  margin-top: 1em;
+  display: none;
+}
+/* line 13, ../sass/partials/design/pages/_contact.scss */
+div#fail p {
+  margin: 0;
+}
+
 /* line 1, ../sass/partials/design/pages/_front.scss */
 section.front {
   /*position: absolute;
