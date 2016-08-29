@@ -33,6 +33,9 @@ defaults:
       title:
       description:
 
+_comments:
+  header_image_path: "This image field is optional and if you upload an image this page won't use one of the random header images, but this selected image. Also the exact image dimensions should be 1888px wide by 444px tall."
+
 # typekit - Because we all need nice type faces.
 typekit: fte2dua
 
