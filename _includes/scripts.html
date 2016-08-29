@@ -41,17 +41,19 @@
 
 </script>
 
-
-
 <script type="text/javascript">
   $(document).ready(function() {
+
+      {% if page.header_image_path != null %}
+      $(".header-wrapper").backstretch("{{ page.header_image_path }}");
+      {% else %}
       $.getJSON('/headers.json').done(function(data){
           var random = data.data[Math.floor(Math.random() * data.data.length)];
           $(".header-wrapper").backstretch(random.header);
       });
+      {% endif %}
   });
 </script>
-
 
 
 {% if site.google_analytics_tracking_id %}
