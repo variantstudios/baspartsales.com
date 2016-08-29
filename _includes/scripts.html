@@ -42,11 +42,16 @@
 </script>
 
 
-  <script type="text/javascript">
+
+<script type="text/javascript">
   $(document).ready(function() {
-    $(".header-wrapper").backstretch("{{ page.header_image_path }}");
+      $.getJSON('/headers.json').done(function(data){
+          var random = data.data[Math.floor(Math.random() * data.data.length)];
+          $(".header-wrapper").backstretch(random.header);
+      });
   });
 </script>
+
 
 
 {% if site.google_analytics_tracking_id %}
