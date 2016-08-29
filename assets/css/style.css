@@ -1127,11 +1127,15 @@ section.front {
 
 /* line 1, ../sass/partials/design/regions/_header.scss */
 .header-wrapper {
-  background: #F4F4F4;
-  -webkit-transition: all .3s ease-in;
-          transition: all .3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in;
   text-align: center;
   padding: 2em 0 3em;
+}
+/* line 6, ../sass/partials/design/regions/_header.scss */
+.header-wrapper div.backstretch img {
+  filter: alpha(Opacity=60);
+  opacity: 0.6;
 }
 
 /* line 12, ../sass/partials/design/regions/_header.scss */
@@ -1139,7 +1143,7 @@ section.front {
   font-size: 1em;
   font-weight: 300;
   margin: 0;
-  padding-top: .75em;
+  padding-top: 0.75em;
 }
 @media (min-width: 50em) {
   /* line 12, ../sass/partials/design/regions/_header.scss */
@@ -1169,20 +1173,22 @@ section.front {
   padding-right: 1em;
 }
 
-/* line 31, ../sass/partials/design/regions/_header.scss */
+/* line 29, ../sass/partials/design/regions/_header.scss */
 .nav-wrapper {
   text-align: center;
   padding: 1em 0;
 }
 @media (min-width: 50em) {
-  /* line 34, ../sass/partials/design/regions/_header.scss */
-  .nav-wrapper .site-navigation, .nav-wrapper .address-info {
+  /* line 32, ../sass/partials/design/regions/_header.scss */
+  .nav-wrapper .address-info,
+  .nav-wrapper .site-navigation {
     display: inline-block;
     vertical-align: middle;
   }
 }
 /* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
-.no-mq .nav-wrapper .site-navigation, .no-mq .nav-wrapper .address-info {
+.no-mq .nav-wrapper .address-info, .no-mq
+.nav-wrapper .site-navigation {
   display: inline-block;
   vertical-align: middle;
 }
