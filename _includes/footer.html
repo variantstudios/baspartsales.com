@@ -1,4 +1,7 @@
 <footer class="site-footer clearfix">
+    <div class="wrap">
+         {% include footer-nav.html nav = site.data.footer-menu %}
+    </div>
   <p class="copy left">Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }} All Rights Reserved.</p>
   <p class="site-by right">Site by: <a href="https://www.variantstudios.com" target="_blank">Variant Studios</a></p>
 </footer>

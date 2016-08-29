@@ -1,6 +1,8 @@
+- text: Home
+  url: /
 - text: About
   url: /about/
-- text: Used Aircraft Parts for Sale
+- text: Search for Used Aircraft Parts for Sale
   url: /used-aircraft-parts-for-sale/
 - text: Contact
   url: /contact/

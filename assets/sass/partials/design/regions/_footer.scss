@@ -1,8 +1,11 @@
 .footer-wrapper {
     background: #000;
     color: #FFF;
-    padding: 1.5em 0 0.5em;
+    padding: 1.5em 0 0.2em;
     @include clearfix;
+    a {
+            color: #4A4A4A;
+    }
 }
 .left {
     text-align: center;

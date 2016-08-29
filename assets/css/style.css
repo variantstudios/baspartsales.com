@@ -755,6 +755,71 @@ ul.pager li a:visited {
   text-decoration: none;
 }
 
+/* line 1, ../sass/partials/design/blocks/_footer-navigation.scss */
+.footer-navigation {
+  margin-bottom: 1em;
+}
+/* line 3, ../sass/partials/design/blocks/_footer-navigation.scss */
+.footer-navigation .menu {
+  padding: 0 0 0em;
+  text-align: center;
+  margin: 0;
+}
+@media (min-width: 50em) {
+  /* line 3, ../sass/partials/design/blocks/_footer-navigation.scss */
+  .footer-navigation .menu {
+    padding: 0;
+  }
+}
+/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+.no-mq .footer-navigation .menu {
+  padding: 0;
+}
+/* line 11, ../sass/partials/design/blocks/_footer-navigation.scss */
+.footer-navigation .menu li {
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  padding: 0;
+}
+/* line 18, ../sass/partials/design/blocks/_footer-navigation.scss */
+.footer-navigation .menu li a {
+  font-weight: 700;
+  font-size: 1em;
+  -webkit-transition: color .5s ease;
+          transition: color .5s ease;
+  padding: 0 0.5em;
+  display: block;
+  color: #4A4A4A;
+}
+@media (min-width: 50em) {
+  /* line 18, ../sass/partials/design/blocks/_footer-navigation.scss */
+  .footer-navigation .menu li a {
+    padding: 0 1em;
+  }
+}
+/* line 92, ../../vendor/bundle/gems/breakpoint-2.5.0/stylesheets/_breakpoint.scss */
+.no-mq .footer-navigation .menu li a {
+  padding: 0 1em;
+}
+/* line 28, ../sass/partials/design/blocks/_footer-navigation.scss */
+.footer-navigation .menu li a:hover {
+  color: #236dbd;
+}
+/* line 31, ../sass/partials/design/blocks/_footer-navigation.scss */
+.footer-navigation .menu li a:active {
+  top: 1px;
+  position: relative;
+}
+/* line 36, ../sass/partials/design/blocks/_footer-navigation.scss */
+.footer-navigation .menu li ul {
+  background: rgba(255, 255, 255, 0.87);
+}
+/* line 46, ../sass/partials/design/blocks/_footer-navigation.scss */
+.footer-navigation .menu a, .footer-navigation .menu a:visited {
+  text-decoration: none;
+}
+
 /* line 1, ../sass/partials/design/blocks/_flexslider.scss */
 .flexslider {
   margin: 0 0 2em;
@@ -1005,7 +1070,7 @@ section.front {
 .footer-wrapper {
   background: #000;
   color: #FFF;
-  padding: 1.5em 0 0.5em;
+  padding: 1.5em 0 0.2em;
 }
 /* line 13, ../../vendor/bundle/gems/toolkit-2.3.0/stylesheets/toolkit/_clearfix.scss */
 .footer-wrapper:after {
@@ -1013,13 +1078,17 @@ section.front {
   display: table;
   clear: both;
 }
+/* line 6, ../sass/partials/design/regions/_footer.scss */
+.footer-wrapper a {
+  color: #4A4A4A;
+}
 
-/* line 7, ../sass/partials/design/regions/_footer.scss */
+/* line 10, ../sass/partials/design/regions/_footer.scss */
 .left {
   text-align: center;
 }
 @media (min-width: 50em) {
-  /* line 7, ../sass/partials/design/regions/_footer.scss */
+  /* line 10, ../sass/partials/design/regions/_footer.scss */
   .left {
     width: 45%;
     float: left;
@@ -1035,12 +1104,12 @@ section.front {
   padding-left: 3%;
 }
 
-/* line 16, ../sass/partials/design/regions/_footer.scss */
+/* line 19, ../sass/partials/design/regions/_footer.scss */
 .right {
   text-align: center;
 }
 @media (min-width: 50em) {
-  /* line 16, ../sass/partials/design/regions/_footer.scss */
+  /* line 19, ../sass/partials/design/regions/_footer.scss */
   .right {
     width: 45%;
     float: right;
