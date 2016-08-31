@@ -9,5 +9,8 @@ $(document).ready(function() {
   $(".open-menu").on('click touch', function() {
     $('.site-wrapper').toggleClass('show');
   });
-
+  // PNG LOGO FALLBACK FOR OLD BROWSERS
+  if (!Modernizr.svg) {
+    $(".site-name.logo img").attr("src", "/assets/images/logo.png");
+  }
 });
