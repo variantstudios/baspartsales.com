@@ -3,8 +3,8 @@
 title: "B.A.S. Part Sales"
 email: "team@variantstudios.com"
 description: "We are the world’s largest internet based platforms for selling general aviation airframe, both new and used, engine and avionic suppliers."
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://kind-jungle.cloudvent.net" # the base hostname & protocol for your site
+baseurl: "/" # the subpath of your site, e.g. /blog/
+url: "http://www.baspartsales.com" # the base hostname & protocol for your site
 #timezone: America/Denver - Don't set for CloudCannon...for reasons.
 version: "3.1.6" # the version of jekyll
 author.name: "Variant Studios"
