@@ -40,6 +40,6 @@ _comments:
 typekit: fte2dua
 
 # Google Analytics - What site isn't using it?!
-google_analytics_tracking_id:
+google_analytics_tracking_id: "UA-25901960-1"
 
 exclude: ["vendor","node_modules","package.json","Gemfile","gulpfile.js","*.scss"]
