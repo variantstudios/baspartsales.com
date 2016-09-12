@@ -1,42 +1,36 @@
 ---
 title: Home page
 layout: front
-header_image_path: 
+header_image_path:
 logos:
-  - title: 'Beechcraft'
-    image: '/assets/images/logos/beechcraft.png'
-  - title: 'Cessna'
-    image: '/assets/images/logos/cessna.png'
-  - title: 'Cirrus'
-    image: '/assets/images/logos/cirrus.png'
-  - title: 'Continental'
-    image: '/assets/images/logos/continental.png'
-  - title: 'Garmin'
-    image: '/assets/images/logos/garmin.png'
-  - title: 'Lycoming'
-    image: '/assets/images/logos/lycoming.png'
-  - title: 'Mooney'
-    image: '/assets/images/logos/mooney.png'
+  - title: Beechcraft
+    image: /assets/images/logos/beechcraft.png
+  - title: Cessna
+    image: /assets/images/logos/cessna.png
+  - title: Cirrus
+    image: /assets/images/logos/cirrus.png
+  - title: Continental
+    image: /assets/images/logos/continental.png
+  - title: Garmin
+    image: /assets/images/logos/garmin.png
+  - title: Lycoming
+    image: /assets/images/logos/lycoming.png
+  - title: Mooney
+    image: /assets/images/logos/mooney.png
 seo:
-  page_title: 'BAS Part Sales'
+  page_title: BAS Part Sales
   page_description: "Here's the page description. Replace me!"
 ---
 
-<div class="editable site-intro">
-    <h1>B.A.S Parts &amp; Sales</h1>
-    <h2>Serving Aviation since 1946</h2>
-    <img src="assets/images/plane-icon.png">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus euismod ornare. Sed ut lacus ut odio cursus elementum ut a urna. Quisque commodo augue leo, a porttitor ipsum auctor dignissim.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus euismod ornare. Quisque commodo augue leo.</p>
-</div>
+<div class="editable site-intro"><h1>B.A.S Parts &amp; Sales</h1><h2>Serving Aviation since 1946</h2><p><img src="assets/images/plane-icon.png" /></p><p>Contact BAS Part Sales, LLC and access thousands of aircraft parts including , Cessna, Beechcraft, Piper and Mooney! &nbsp;With our online store you can order 24/7 from around the world. &nbsp;Also, feel free to call us <a href="tel:9703134823">970.313.4823</a> and talk to our friendly and experienced staff!</p></div>
 <div class="editable site-intro-image">
-    <div class="border-img"><img src="/assets/images/home-photo.jpg"></div>
+    <div class="border-img"><img src="/assets/images/home-photo.jpg" /></div>
 </div>
 <div class="client-logos">
     <h3>Clients &amp; Brands</h3>
     <ul class="logos">
          {% for item in page.logos %}
-        <li><a href="/used-aircraft-parts-for-sale/?s={{item.title | downcase}}" title="{{item.title}} Used Aircraft Part Search"><img src="{{item.image}}" alt="{{item.title}} Logo"/></a></li>
+        <li><a href="/used-aircraft-parts-for-sale/?s={{item.title | downcase}}" title="{{item.title}} Used Aircraft Part Search"><img src="{{item.image}}" alt="{{item.title}} Logo" /></a></li>
         {% endfor %}
     </ul>
 </div>
