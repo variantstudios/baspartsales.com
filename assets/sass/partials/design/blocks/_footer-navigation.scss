@@ -1,5 +1,5 @@
 .footer-navigation {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     .menu {
       padding: 0 0 0em;
       text-align: center;
@@ -21,7 +21,7 @@
           transition: color .5s ease;
           padding: 0 0.5em;
           display: block;
-          color: #4A4A4A;
+          color: #fff;
           @include breakpoint($bp-medium, $no-query: '.no-mq') {
             padding: 0 1em;
           }

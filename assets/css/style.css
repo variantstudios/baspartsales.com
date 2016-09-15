@@ -587,21 +587,46 @@ input[type="submit"] {
   cursor: pointer;
   padding: .5em 1.25em;
   font-size: 100%;
-  font-family: "bookmania", sans-serif;
   display: inline-block;
-  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), inset 0px 2px 0px 0px white;
-          box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), inset 0px 2px 0px 0px white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border-radius: 3px;
   padding: 10px 25px;
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   font-size: .8em;
-  color: #373737;
+  color: #fff;
   cursor: pointer;
 }
 /* line 56, ../sass/partials/global/_mixins.scss */
 input[type="submit"]:hover {
   background-color: #949494;
+}
+
+/* line 16, ../sass/partials/styleguide/forms/_buttons.scss */
+.btn {
+  margin: 1em 0;
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3498db), to(#2980b9));
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  border-radius: 3px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* line 35, ../sass/partials/styleguide/forms/_buttons.scss */
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3cb0fd), to(#3498db));
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
 }
 
 /* line 2, ../sass/partials/styleguide/forms/_label.scss */
@@ -757,7 +782,7 @@ ul.pager li a:visited {
 
 /* line 1, ../sass/partials/design/blocks/_footer-navigation.scss */
 .footer-navigation {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 /* line 3, ../sass/partials/design/blocks/_footer-navigation.scss */
 .footer-navigation .menu {
@@ -790,7 +815,7 @@ ul.pager li a:visited {
           transition: color .5s ease;
   padding: 0 0.5em;
   display: block;
-  color: #4A4A4A;
+  color: #fff;
 }
 @media (min-width: 50em) {
   /* line 18, ../sass/partials/design/blocks/_footer-navigation.scss */
