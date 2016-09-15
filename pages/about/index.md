@@ -13,9 +13,11 @@ BAS Part Sales, LLC is a sister company to the very high regarded Beegles Aircra
 
 We are the world’s largest internet based platform for selling general aviation airframe, both new and used, engine and avionic suppliers. Today we currently utilize, eBay, Partsbase, Controller, Facebook, Google, etc. You can always drop the mouse and pick up the phone and talk to our friendly, knowledgeable sales staff Monday thru Friday 7:30- 4:00.
 
+&nbsp;
+
 625 Airport Road
 <br>Greeley, CO 80631
 
 Telephone: [(970) 313-4823](tel:9703134823)
 
-<iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJJRGkXTWfbocR8iSPCYPboSg&key=AIzaSyAvJOqm--wJafe0w0QOhsfZdBPyPPqILOw" allowfullscreen></iframe>
+<iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJJRGkXTWfbocR8iSPCYPboSg&amp;key=AIzaSyAvJOqm--wJafe0w0QOhsfZdBPyPPqILOw" allowfullscreen=""></iframe>
