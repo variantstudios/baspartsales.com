@@ -1,5 +1,5 @@
 .front {
-  
+
 }
 
 .site-intro {
@@ -34,4 +34,11 @@
     padding-top: 3em;
 
   }
+}
+#fb-root.fb_reset {
+    clear:both;
+    text-align:center;
+}
+.fb-follow.fb_iframe_widget {
+    margin: 1em 0 !important;
 }
