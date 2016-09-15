@@ -1376,6 +1376,17 @@ main, header, footer, section, aside {
   padding-top: 3em;
 }
 
+/* line 38, ../sass/partials/design/views/_front.scss */
+#fb-root.fb_reset {
+  clear: both;
+  text-align: center;
+}
+
+/* line 42, ../sass/partials/design/views/_front.scss */
+.fb-follow.fb_iframe_widget {
+  margin: 1em 0 !important;
+}
+
 /* line 2, ../sass/partials/design/views/_team.scss */
 .team-list .person {
   padding-bottom: 2em;
