@@ -39,7 +39,7 @@ _comments:
 # typekit - Because we all need nice type faces.
 typekit: fte2dua
 
-# Google Analytics
-google_analytics_tracking_id: "UA-84267812"
+# Google Analytics - What site isn't using it?!
+google_analytics_tracking_id: "UA-84267812-1"
 
 exclude: ["vendor","node_modules","package.json","Gemfile","gulpfile.js","*.scss"]
