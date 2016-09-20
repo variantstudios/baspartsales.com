@@ -2,8 +2,9 @@
 layout: default
 ---
 
-<main>
-  <section class="wrap with-sidebar">
+<!-- <main class="clearfix"> -->
+<div class="wrap clearfix sidebar-wrapper">
+  <section class="with-sidebar">
     <h1 class="pagetitle">{{ page.title }}</h1>
     {% if page.subtitle %}
       <h2 class="subtitle">{{ page.subtitle }}</h2>
@@ -11,4 +12,6 @@ layout: default
     <div>{{ content }}</div>
   </section>
   {% include sidebar.html %}
-</main>
+
+  </div>
+<!-- </main> -->

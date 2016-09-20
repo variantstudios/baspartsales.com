@@ -1,10 +1,19 @@
 ---
 title: How to Order
-layout: page
+layout: page-sidebar
 permalink: /how-to-order/
 header_image_path:
 form_response_message: 'Thanks for your message! We will be in touch soon.'
 form_failed: Your submission has failed. Please try again.
+gallery:
+  - title: "B.A.S. Parts and Sales - Aircraft Parts for Sale"
+    image: /assets/images/gallery/used-aircraft-parts-for-sale/used-aircraft-parts-for-sale-012.jpg
+  - title: "B.A.S. Parts and Sales - Aircraft Parts for Sale"
+    image: /assets/images/gallery/used-aircraft-parts-for-sale/used-aircraft-parts-for-sale-011.jpg
+  - title: "B.A.S. Parts and Sales - Aircraft Parts for Sale"
+    image: /assets/images/gallery/used-aircraft-parts-for-sale/used-aircraft-parts-for-sale-010.jpg
+  - title: "B.A.S. Parts and Sales - Aircraft Parts for Sale"
+    image: /assets/images/gallery/used-aircraft-parts-for-sale/used-aircraft-parts-for-sale-009.jpg
 seo:
   page_title: BAS Part Sales
   page_description: "Here's the page description. Replace me!"

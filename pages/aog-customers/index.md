@@ -1,8 +1,16 @@
 ---
 title: A.O.G. Customers
-layout: page
+layout: page-sidebar
 permalink: /aog-customers/
-header_image_path:
+gallery:
+  - title: "B.A.S. Parts and Sales - Aircraft Parts for Sale"
+    image: /assets/images/gallery/used-aircraft-parts-for-sale/used-aircraft-parts-for-sale-001.jpg
+  - title: "B.A.S. Parts and Sales - Aircraft Parts for Sale"
+    image: /assets/images/gallery/used-aircraft-parts-for-sale/used-aircraft-parts-for-sale-002.jpg
+  - title: "B.A.S. Parts and Sales - Aircraft Parts for Sale"
+    image: /assets/images/gallery/used-aircraft-parts-for-sale/used-aircraft-parts-for-sale-003.jpg
+  - title: "B.A.S. Parts and Sales - Aircraft Parts for Sale"
+    image: /assets/images/gallery/used-aircraft-parts-for-sale/used-aircraft-parts-for-sale-004.jpg
 form_response_message: 'Thanks for your message! We will be in touch soon.'
 form_failed: Your submission has failed. Please try again.
 seo:

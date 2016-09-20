@@ -13,4 +13,11 @@ $(document).ready(function() {
   if (!Modernizr.svg) {
     $(".site-name.logo img").attr("src", "/assets/images/logo.png");
   }
+
+  // Header image
+  $.getJSON('/headers.json').done(function(data){
+      var random = data.data[Math.floor(Math.random() * data.data.length)];
+      $(".header-wrapper").backstretch(random.header);
+  });
+
 });
