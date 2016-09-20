@@ -6,20 +6,18 @@
 <html class="no-js" lang="en">
     <!--<![endif]-->
     {% include head.html %}
-    <body>
+    <body class="{{ page.url | remove: "/" }}">
         {% include browserupgrade.html %}
 
         <div class="site-wrapper clearfix">
             {% include header.html %}
-            <div class="main-wrapper clearfix" id="demo">
+            <div class="main-wrapper clearfix">
                 {{ content }}
                 <div class="footer-wrapper clearfix">
                     {% include footer.html %}
                 </div>
             </div>
         </div>
-
-        
 
         {% include scripts.html %}
     </body>

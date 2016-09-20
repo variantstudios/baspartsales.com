@@ -2,7 +2,15 @@
 title: About
 layout: page
 permalink: /about/
-header_image_path:
+gallery:
+  - title: "B.A.S. Parts and Sales - Hanger"
+    image: /assets/images/gallery/about-bas-parts-sales/about-bas-parts-sales-001.jpg
+  - title: "B.A.S. Parts and Sales - Hanger"
+    image: /assets/images/gallery/about-bas-parts-sales/about-bas-parts-sales-002.jpg
+  - title: "B.A.S. Parts and Sales - Hanger"
+    image: /assets/images/gallery/about-bas-parts-sales/about-bas-parts-sales-003.jpg
+  - title: "B.A.S. Parts and Sales - Hanger"
+    image: /assets/images/gallery/about-bas-parts-sales/about-bas-parts-sales-004.jpg
 seo:
   page_title: About BAS Part Sales Greeley Colorado.
   page_description: 'We are the world’s largest internet based platforms for selling general aviation airframe, both new and used, engine and avionic suppliers.'
@@ -19,5 +27,3 @@ We are the world’s largest internet based platform for selling general aviatio
 <br>Greeley, CO 80631
 
 Telephone: [(970) 313-4823](tel:9703134823)
-
-<iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJJRGkXTWfbocR8iSPCYPboSg&amp;key=AIzaSyAvJOqm--wJafe0w0QOhsfZdBPyPPqILOw" allowfullscreen=""></iframe>

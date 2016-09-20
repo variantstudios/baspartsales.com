@@ -9,6 +9,10 @@ layout: default
     <div>{{ content }}</div>
     {% if page.url contains "contact" %}
       {% include contact-form.html %}
+      {% elsif page.url contains "how-to-order" %}
+      {% include gallery.html %}
+     {% elsif page.url contains "about" %}
+      {% include map.html %}{% include gallery.html %}
       {% elsif  page.url contains"/used-aircraft-parts-for-sale/" %}
          {% include search.html %}
      {% elsif  page.url contains"/products/" %}

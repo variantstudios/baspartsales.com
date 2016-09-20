@@ -17,6 +17,13 @@ logos:
     image: /assets/images/logos/lycoming.png
   - title: Mooney
     image: /assets/images/logos/mooney.png
+gallery:
+  - title: Salvage Aircraft n113wb
+    image: /assets/images/gallery/salvage_aircraft_n113wb/salvage_aircraft_n113wb_001.jpg
+  - title: Salvage Aircraft n113wb
+    image: /assets/images/gallery/salvage_aircraft_n113wb/salvage_aircraft_n113wb_002.jpg
+  - title: Salvage Aircraft n113wb
+    image: /assets/images/gallery/salvage_aircraft_n113wb/salvage_aircraft_n113wb_003.jpg
 seo:
   page_title: 'BAS Part Sales | Aircraft Parts Store'
   page_description: 'Contact BAS Part Sales, LLC and access thousands of aircraft parts including , Cessna, Beechcraft, Piper and Mooney!'
@@ -28,9 +35,14 @@ seo:
     <p>Contact BAS Part Sales, LLC and access thousands of aircraft parts including, Cessna, Beechcraft, Piper and Mooney! &nbsp;With our online store you can order 24/7 from around the world. &nbsp;Also, feel free to call us <a href="tel:9703134823">970.313.4823</a>        and talk to our friendly and experienced staff!</p>
 </div>
 
-<div class="editable site-intro-image">
-    <div class="border-img"><img src="/assets/images/home-photo.jpg" /></div>
+<div class="site-intro-image">
+    <div  id="cycler">
+        {% for item in page.gallery %}
+            <img src="{{item.image}}" alt="{{item.title}}"  {% if forloop.first == true %}class="base"{% endif %} />
+        {% endfor %}
+    </div>
 </div>
+
 
 <div id="fb-root"></div>
 <script>

@@ -1,8 +1,16 @@
 ---
 title: Terms of Service
-layout: page
+layout: page-sidebar
 permalink: /terms/
-header_image_path:
+gallery:
+  - title: "B.A.S. Parts and Sales - Aircraft Parts for Sale"
+    image: /assets/images/gallery/used-aircraft-parts-for-sale/used-aircraft-parts-for-sale-005.jpg
+  - title: "B.A.S. Parts and Sales - Aircraft Parts for Sale"
+    image: /assets/images/gallery/used-aircraft-parts-for-sale/used-aircraft-parts-for-sale-006.jpg
+  - title: "B.A.S. Parts and Sales - Aircraft Parts for Sale"
+    image: /assets/images/gallery/used-aircraft-parts-for-sale/used-aircraft-parts-for-sale-007.jpg
+  - title: "B.A.S. Parts and Sales - Aircraft Parts for Sale"
+    image: /assets/images/gallery/used-aircraft-parts-for-sale/used-aircraft-parts-for-sale-008.jpg
 form_response_message: 'Thanks for your message! We will be in touch soon.'
 form_failed: Your submission has failed. Please try again.
 seo:
