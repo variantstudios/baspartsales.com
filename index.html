@@ -38,7 +38,12 @@ seo:
 <div class="site-intro-image">
     <div  id="cycler">
         {% for item in page.gallery %}
-            <img src="{{item.image}}" alt="{{item.title}}"   />
+        {% if forloop.first == true %}
+        <img src="{{item.image}}" alt="{{item.title}}" class="base" />
+        {% elseif %}
+        <img src="{{item.image}}" alt="{{item.title}}" />
+        {% endif %}
+            
         {% endfor %}
     </div>
 </div>
