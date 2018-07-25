@@ -28,13 +28,13 @@
 
     if (search === undefined || search === null || search === '') {
         console.log("false");
-        origurl = "http://www.auctionnudge.com/item_build/js/SellerID/baspartsales/siteid/0/theme/responsive/MaxEntries/20/page/init/show_logo/1/blank/1/img_size/120";
+        origurl = "//www.auctionnudge.com/item_build/js/SellerID/baspartsales/siteid/0/theme/responsive/MaxEntries/20/page/init/show_logo/1/blank/1/img_size/120";
         newurl = '"' + origurl + '"';
     } else {
         //console.log("true");
         var search_input = document.querySelector('input[class="search"]');
         search_input.value = search;
-        origurl = "http://www.auctionnudge.com/item_build/js/SellerID/baspartsales/siteid/0/theme/responsive/MaxEntries/20/page/init/show_logo/1/blank/1/img_size/120/keyword/";
+        origurl = "//www.auctionnudge.com/item_build/js/SellerID/baspartsales/siteid/0/theme/responsive/MaxEntries/20/page/init/show_logo/1/blank/1/img_size/120/keyword/";
         keyword = params['s'];
         newurl = '"' + origurl + keyword + '"';
     }
