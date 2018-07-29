@@ -1,58 +1,31 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/assets/js/prod/jquery-1-11-1.min.js"><\/script>')</script>
+<script>
+    window.jQuery || document.write('<script src="/assets/js/prod/jquery-1-11-1.min.js"><\/script>')
+</script>
 <script src="/assets/js/prod/scripts.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 
 
-<script src='https://www.google.com/recaptcha/api.js'></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        var targetURL = "https://staticformapp.com/send/";
-        $("#form").submit(function(ev) {
-            ev.preventDefault();
-            var formData = $(this).serialize();
-                        $.ajax({
-                type: 'POST', url: targetURL, data: formData,
-                cache: false,
-                success: function(data) {
-                    console.log(data);
-                    if (data == "true") {
-                        $('#form-message').css("display","block");
-                        $("html, body").delay(0).animate({scrollTop: $('#form-message').offset().top }, 2000);
-                        $('#form-message').hide(0).delay(300).fadeIn(2000);
-                        $('#form-message').delay(6000).fadeOut(2000);
-                        grecaptcha.reset();
-                        $('#form').trigger("reset");
-                    } else {
-                        $('#fail').hide(0).delay(300).fadeIn(2000);
-                        $('#fail').delay(10000).fadeOut(2000);
-                        grecaptcha.reset();
-                    }
-                },
-                error: function(request, status, error) {
-                    $('#fail').hide(0).delay(300).fadeIn(2000);
-                    $('#fail').delay(6000).fadeOut(2000);
-                    grecaptcha.reset();
-                }
-            });
-
-        });
-    });
-</script>
-
-
 {% if page.gallery %}
 <script type="text/javascript" src="/assets/js/prod/cycle-images.js"></script>
-{% endif %}
-
-{% if site.google_analytics_tracking_id %}
-  <!-- google analytics -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+{% endif %} {% if page.url == '/contact/' %}
+<script src="/assets/js/prod/contact.js"></script>
+<script src='https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit' async defer></script>
+{% endif %} {% if site.google_analytics_tracking_id %}
+<!-- google analytics -->
+<script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
     ga('create', '{{ site.google_analytics_tracking_id }}', 'auto');
     ga('send', 'pageview');
-  </script>
+</script>
 {% endif %}

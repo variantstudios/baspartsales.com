@@ -1,57 +1,57 @@
-
-
 <div class="" style="width:40%; float: left">
-<div id="contact-message">
-        <h3>{{page.webform.thank_you_message}}</h3>
+    <div id="contact-message">
+        <h3>{{page.form_response_message}}</h3>
     </div>
-<form id="form" method="post" action="/contact-us/?sent=true">
+    <form id="form" class="clearfix" method="post" action="/contact-us/?sent=true">
 
-  <input type="hidden" name="_to" value="jared.boles@baspartsales.com,team@variantstudios.com">
-  <input type="hidden" name="_subject" value="B.A.S Part Sales - Contact Form">
-  <input type="text" name="_gotcha" style="display: none;">
+        <input type="hidden" name="_to" value="jared.boles@baspartsales.com,team@variantstudios.com">
+        <input type="hidden" name="_subject" value="B.A.S Part Sales - Contact Form">
+        <input type="text" name="_gotcha" style="display: none;">
 
-    <div class="webform-component">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" required="">
-    </div>
-    <div class="webform-component">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" required="">
-    </div>
-    <div class="webform-component">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="6"></textarea>
-    </div>
-    <div class="webform-component">
-         <div class="g-recaptcha left" id="RecaptchaField1"></div>
-    </div>
-    
-    <div class="webform-component">
-        <input class="sendButton btn" type="submit" name="Submit" value="Send">
-    </div>
-</form>
+        <div class="webform-component">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required="">
+        </div>
+        <div class="webform-component">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required="">
+        </div>
+        <div class="webform-component">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6"></textarea>
+        </div>
+        <div class="webform-component clearfix">
+            <div class="g-recaptcha left" id="RecaptchaField1"></div>
+        </div>
 
-<div id="fb-root"></div>
-<script>
-    (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=150372311748402";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
-<div class="fb-follow" data-href="https://www.facebook.com/BASPartSales" data-layout="standard" data-size="small" data-show-faces="true"></div>
+        <div class="webform-component clearfix">
+            <input class="sendButton btn" type="submit" name="Submit" value="Send">
+        </div>
+    </form>
+
+    <!-- <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=150372311748402";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="fb-follow" data-href="https://www.facebook.com/BASPartSales" data-layout="standard" data-size="small" data-show-faces="true"></div> -->
 
 
-<iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJJRGkXTWfbocR8iSPCYPboSg&key=AIzaSyAvJOqm--wJafe0w0QOhsfZdBPyPPqILOw" allowfullscreen></iframe>
+    <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJJRGkXTWfbocR8iSPCYPboSg&key=AIzaSyAvJOqm--wJafe0w0QOhsfZdBPyPPqILOw" allowfullscreen></iframe>
 </div>
 
 <div class="" style="width:50%; float: left; margin-left: 5%;">
     <h3>AIRPORT INFORMATION</h3>
     <p><strong>GENERAL INFORMATION</strong><br />Location Identifier: KGXY<br />Airfield Elevation: 4,697' MSL<br />Unicom Frequency: 122.8 MHz</p>
-<p><strong>RUNWAY 16/34</strong><br />10,000' x 100', Asphalt, Excellent Condition.<br />Runway 34, 1,100' Displaced Threshold<br />Medium Intensity Runway Lights (MIRL)<br />Precision Approach Path Indicators (PAPI) (P2L) &amp; Runway End Identifier Lights (REIL) Runways 16 &amp; 34.<br />Category I Instrument Landing System (ILS).<br />Future GPS approach.</p>
-<p><strong>RUNWAY 9/27</strong><br />5,800' x 100', Asphalt, Excellent Condition.<br />Medium Intensity Runway Lights (MIRL)<br />Precision Approach Path Indicators (PAPI) (P2L) Runway 9.<br />Visual Approach Slope Indicator (VASI) Runway 27.<br />Runway End Identifier Lights (REIL) Runways 9 &amp; 27.<br />VOR, GPS and NDB approaches.<br />Right Traffic; Runway 27.</p>
-<p><strong>AUTOMATED WEATHER OBSERVATION SYSTEM (AWOS)</strong><br />24 Hour automated weather information on field.<br />Frequency: 135.175 MHz<br />Phone:&nbsp;<a href="tel:9703523511">(970) 352-3511</a></p>
+    <p><strong>RUNWAY 16/34</strong><br />10,000' x 100', Asphalt, Excellent Condition.<br />Runway 34, 1,100' Displaced Threshold<br />Medium Intensity Runway Lights (MIRL)<br />Precision Approach Path Indicators (PAPI) (P2L) &amp; Runway End Identifier
+        Lights (REIL) Runways 16 &amp; 34.<br />Category I Instrument Landing System (ILS).<br />Future GPS approach.</p>
+    <p><strong>RUNWAY 9/27</strong><br />5,800' x 100', Asphalt, Excellent Condition.<br />Medium Intensity Runway Lights (MIRL)<br />Precision Approach Path Indicators (PAPI) (P2L) Runway 9.<br />Visual Approach Slope Indicator (VASI) Runway 27.<br />Runway
+        End Identifier Lights (REIL) Runways 9 &amp; 27.<br />VOR, GPS and NDB approaches.<br />Right Traffic; Runway 27.</p>
+    <p><strong>AUTOMATED WEATHER OBSERVATION SYSTEM (AWOS)</strong><br />24 Hour automated weather information on field.<br />Frequency: 135.175 MHz<br />Phone:&nbsp;<a href="tel:9703523511">(970) 352-3511</a></p>
 </div>
